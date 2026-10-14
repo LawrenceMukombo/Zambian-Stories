@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="pub-id" version="3.0" xml:lang="en">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="pub-id">urn:uuid:zambezi-legends-2026-edition</dc:identifier>
+    <dc:title id="title">Legends of the Zambezi: Spirits, Giants &amp; Sacred Waters</dc:title>
+    <dc:language>en</dc:language>
+    <dc:creator id="creator">Lawrence Mukombo</dc:creator>
+    <dc:publisher>Baobab Heritage Press</dc:publisher>
+    <dc:date>2026-10-14</dc:date>
+    <dc:description>An illustrated storybook exploring the sacred folklore and river spirits of Zambia, featuring authentic hand-drawn illustrations and educational comprehension guides.</dc:description>
+    <meta property="dcterms:modified">2026-10-14T18:51:30Z</meta>
+    <meta name="cover" content="cover-img"/>
+  </metadata>
+  <manifest>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="style" href="styles/style.css" media-type="text/css"/>
+    <item id="cover-img" href="images/cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="cover-page" href="text/cover.xhtml" media-type="application/xhtml+xml"/>
+    <item id="title-page" href="text/title.xhtml" media-type="application/xhtml+xml"/>
+    <item id="chapter-01" href="text/chapter-01.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-01" href="images/chapter-01.jpg" media-type="image/jpeg"/>
+    <item id="chapter-02" href="text/chapter-02.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-02" href="images/chapter-02.jpg" media-type="image/jpeg"/>
+    <item id="chapter-03" href="text/chapter-03.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-03" href="images/chapter-03.jpg" media-type="image/jpeg"/>
+    <item id="chapter-04" href="text/chapter-04.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-04" href="images/chapter-04.jpg" media-type="image/jpeg"/>
+    <item id="chapter-05" href="text/chapter-05.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-05" href="images/chapter-05.jpg" media-type="image/jpeg"/>
+    <item id="chapter-06" href="text/chapter-06.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-06" href="images/chapter-06.jpg" media-type="image/jpeg"/>
+    <item id="chapter-07" href="text/chapter-07.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-07" href="images/chapter-07.jpg" media-type="image/jpeg"/>
+    <item id="chapter-08" href="text/chapter-08.xhtml" media-type="application/xhtml+xml"/>
+    <item id="img-chapter-08" href="images/chapter-08.jpg" media-type="image/jpeg"/>
+    <item id="colophon" href="text/colophon.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover-page"/>
+    <itemref idref="title-page"/>
+    <itemref idref="chapter-01"/>
+    <itemref idref="chapter-02"/>
+    <itemref idref="chapter-03"/>
+    <itemref idref="chapter-04"/>
+    <itemref idref="chapter-05"/>
+    <itemref idref="chapter-06"/>
+    <itemref idref="chapter-07"/>
+    <itemref idref="chapter-08"/>
+    <itemref idref="colophon"/>
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover" href="text/cover.xhtml"/>
+    <reference type="toc" title="Table of Contents" href="nav.xhtml"/>
+  </guide>
+</package>

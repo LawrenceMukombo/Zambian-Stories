@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:zambezi-legends-2026-edition"/>
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Legends of the Zambezi: Spirits, Giants &amp; Sacred Waters</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+      <navLabel><text>Cover</text></navLabel>
+      <content src="text/cover.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-2" playOrder="2">
+      <navLabel><text>Title Page</text></navLabel>
+      <content src="text/title.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-3" playOrder="3">
+      <navLabel><text>The Calling of Nyami Nyami</text></navLabel>
+      <content src="text/chapter-01.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-4" playOrder="4">
+      <navLabel><text>Mosi-oa-Tunya: The Smoke That Thunders</text></navLabel>
+      <content src="text/chapter-02.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-5" playOrder="5">
+      <navLabel><text>The Water Maidens of Musonda Falls</text></navLabel>
+      <content src="text/chapter-03.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-6" playOrder="6">
+      <navLabel><text>Makumba: The Sacred Sky Stone</text></navLabel>
+      <content src="text/chapter-04.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-7" playOrder="7">
+      <navLabel><text>The Moon Leopard of Lake Bangweulu</text></navLabel>
+      <content src="text/chapter-05.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-8" playOrder="8">
+      <navLabel><text>The Mukuni Fire Walkers and the Sacred Flame</text></navLabel>
+      <content src="text/chapter-06.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-9" playOrder="9">
+      <navLabel><text>The Secret Cavern of Batoka Gorge</text></navLabel>
+      <content src="text/chapter-07.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-10" playOrder="10">
+      <navLabel><text>The Singing Baobab of Luangwa</text></navLabel>
+      <content src="text/chapter-08.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-11" playOrder="11">
+      <navLabel><text>Cultural Acknowledgments</text></navLabel>
+      <content src="text/colophon.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

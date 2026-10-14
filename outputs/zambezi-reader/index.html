@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Legends of the Zambezi — Illustrated Traditional Book Reader</title>
+  <meta name="description" content="An illustrated storybook exploring the sacred folklore, river spirits, and cultural heritage of the Zambezi Valley.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-parchment">
+  <header class="app-header">
+    <div class="header-left">
+      <button id="btn-toc" class="icon-btn" title="Table of Contents (T)" aria-label="Table of Contents">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+        <span class="btn-text">Chapters</span>
+      </button>
+      <div class="header-meta">
+        <span class="book-series">African Heritage Series • Volume I</span>
+        <h1 class="header-title">Legends of the Zambezi</h1>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <span id="current-chapter-title" class="running-header">Loading...</span>
+    </div>
+
+    <div class="header-right">
+      <button id="btn-audio" class="icon-btn" title="Narrate Page (R)" aria-label="Read Aloud">
+        <svg id="tts-icon-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        <svg id="tts-icon-stop" class="hidden" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6 6h12v12H6z"/></svg>
+        <span id="tts-label" class="btn-text">Read Aloud</span>
+      </button>
+
+      <button id="btn-font-size" class="icon-btn" title="Adjust Font Size" aria-label="Font Size">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V7l5 12M2 17h6M14 19l4-9 4 9M13 16h6"/></svg>
+      </button>
+
+      <button id="btn-theme" class="icon-btn" title="Change Reading Atmosphere" aria-label="Switch Theme">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+
+      <a href="../Legends-of-the-Zambezi.epub" download class="icon-btn download-btn" title="Download EPUB for Apple Books / iOS" aria-label="Download EPUB">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <span class="btn-text">EPUB</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main 3D Book Viewport -->
+  <main class="reading-viewport">
+    <button id="btn-prev" class="nav-paddle paddle-left" title="Previous Page (Arrow Left)" aria-label="Previous Page">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+
+    <div class="book-perspective">
+      <div id="book-container" class="book-spread">
+        <!-- Left Physical Page -->
+        <article class="book-page page-left" id="page-left">
+          <div class="page-inner">
+            <div class="page-header">
+              <span class="header-left-text" id="left-running-head">Legends of the Zambezi</span>
+            </div>
+            <div class="page-content" id="left-page-content">
+              <!-- Dynamically injected left page content -->
+            </div>
+            <div class="page-footer">
+              <span class="page-number" id="left-page-number">1</span>
+            </div>
+          </div>
+          <div class="page-shadow-gutter"></div>
+        </article>
+
+        <!-- Spine 3D Crease -->
+        <div class="book-spine"></div>
+
+        <!-- Right Physical Page -->
+        <article class="book-page page-right" id="page-right">
+          <div class="page-shadow-gutter"></div>
+          <div class="page-inner">
+            <div class="page-header">
+              <span class="header-right-text" id="right-running-head">Chapter</span>
+            </div>
+            <div class="page-content" id="right-page-content">
+              <!-- Dynamically injected right page content -->
+            </div>
+            <div class="page-footer">
+              <span class="page-number" id="right-page-number">2</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3D Flipping Leaf (for realistic animation) -->
+        <div id="flipping-leaf" class="flipping-leaf hidden">
+          <div class="leaf-front" id="leaf-front"></div>
+          <div class="leaf-back" id="leaf-back"></div>
+        </div>
+      </div>
+    </div>
+
+    <button id="btn-next" class="nav-paddle paddle-right" title="Next Page (Arrow Right)" aria-label="Next Page">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </main>
+
+  <!-- Bottom Navigation & Scrubbing Bar -->
+  <footer class="app-footer">
+    <div class="footer-scrubber-wrap">
+      <span id="spread-indicator" class="spread-indicator">Page 1 of 18</span>
+      <input type="range" id="page-scrubber" min="0" max="17" value="0" step="1" aria-label="Book Progress Scrubber">
+      <span id="progress-percent" class="progress-percent">0%</span>
+    </div>
+    <div class="footer-hints">
+      <span>Use <kbd>&larr;</kbd> <kbd>&rarr;</kbd> arrow keys to turn pages • Press <kbd>T</kbd> for table of contents</span>
+    </div>
+  </footer>
+
+  <!-- Table of Contents Drawer Modal -->
+  <aside id="toc-drawer" class="toc-drawer hidden" aria-modal="true" role="dialog" aria-label="Table of Contents">
+    <div class="toc-overlay" id="toc-overlay"></div>
+    <div class="toc-panel">
+      <div class="toc-header">
+        <div>
+          <span class="drawer-kicker">Navigation</span>
+          <h2 class="drawer-title">Table of Contents</h2>
+        </div>
+        <button id="btn-close-toc" class="icon-btn close-btn" title="Close (Esc)" aria-label="Close Table of Contents">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="toc-content">
+        <ul id="toc-list" class="toc-list">
+          <!-- Dynamically populated chapters -->
+        </ul>
+      </div>
+
+      <div class="toc-footer">
+        <p>Illustrated by Hand-Drawn Watercolors • 8 Complete Folktales</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quiz & Comprehension Modal -->
+  <section id="quiz-modal" class="quiz-modal hidden" aria-modal="true" role="dialog">
+    <div class="modal-overlay" id="quiz-overlay"></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="drawer-kicker">Comprehension Challenge</span>
+          <h3 id="quiz-chapter-title" class="modal-title">Chapter Quiz</h3>
+        </div>
+        <button id="btn-close-quiz" class="icon-btn close-btn" aria-label="Close Quiz">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="quiz-body" class="modal-body">
+        <!-- Quiz questions injected dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Script data fallback for zero-server / file:// execution -->
+  <script src="stories-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

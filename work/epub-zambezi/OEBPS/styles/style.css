@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@namespace epub "http://www.idpf.org/2007/ops";
+
+body {
+    font-family: "Georgia", "Palatino", serif;
+    font-size: 1.1em;
+    line-height: 1.65;
+    color: #2b2118;
+    background-color: #faf7f2;
+    margin: 5% 8%;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Georgia", serif;
+    color: #4a2c11;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1.book-title {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #8c4a16;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+}
+
+h2.chapter-title {
+    font-size: 1.8em;
+    color: #8c4a16;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+p.chapter-badge {
+    text-align: center;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #b3591b;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+p.chapter-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #6d5b4e;
+    margin-bottom: 1.5em;
+}
+
+p.region-tag {
+    text-align: center;
+    font-size: 0.85em;
+    color: #8c786a;
+    margin-bottom: 2em;
+}
+
+p.first-p::first-letter {
+    font-size: 3.2em;
+    line-height: 0.85;
+    float: left;
+    margin: 0.05em 0.15em 0 0;
+    color: #b3591b;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+}
+
+p {
+    text-indent: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    text-align: justify;
+}
+
+p.first-p {
+    text-indent: 0;
+}
+
+.illustration-box {
+    text-align: center;
+    margin: 2em auto;
+    max-width: 95%;
+}
+
+.illustration-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border: 1px solid #d4c2b2;
+}
+
+.caption {
+    font-size: 0.88em;
+    font-style: italic;
+    color: #5c4b3f;
+    margin-top: 0.6em;
+    text-align: center;
+}
+
+.moral-box {
+    margin: 2em 0;
+    padding: 1.2em 1.5em;
+    background: #f3eae0;
+    border-left: 4px solid #b3591b;
+    border-radius: 4px;
+}
+
+.moral-box h4 {
+    margin: 0 0 0.5em 0;
+    color: #8c4a16;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.moral-box p {
+    text-indent: 0;
+    margin: 0;
+    font-style: italic;
+}
+
+.vocab-box {
+    margin: 2em 0;
+    padding: 1.2em 1.5em;
+    background: #fdfaf6;
+    border: 1px solid #e0d0c0;
+    border-radius: 6px;
+}
+
+.vocab-box h4 {
+    margin: 0 0 0.8em 0;
+    color: #8c4a16;
+    font-size: 1.05em;
+}
+
+.vocab-item {
+    margin-bottom: 0.8em;
+}
+
+.vocab-word {
+    font-weight: bold;
+    color: #3d2410;
+}
+
+.quiz-box {
+    margin: 2em 0;
+    padding: 1.2em 1.5em;
+    background: #f7f3ee;
+    border-top: 2px dashed #c4b09e;
+    border-bottom: 2px dashed #c4b09e;
+}
+
+.quiz-box h4 {
+    margin: 0 0 1em 0;
+    color: #8c4a16;
+}
+
+.question-item {
+    margin-bottom: 1.2em;
+}
+
+.question-title {
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    text-indent: 0;
+}
+
+.option-list {
+    margin: 0.3em 0 0.5em 1.5em;
+    padding: 0;
+    list-style-type: lower-alpha;
+}
+
+.option-list li {
+    margin-bottom: 0.3em;
+}
+
+.explanation {
+    font-size: 0.9em;
+    color: #59473b;
+    font-style: italic;
+    text-indent: 0;
+}
