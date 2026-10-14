@@ -52,6 +52,74 @@ function coverPath(id) {
   return `assets/covers/story-${String(id).padStart(2, '0')}.${ext}`;
 }
 
+// In-Page Contextual Scenes to visualize key moments across all 60 stories
+const STORY_CONTEXTUAL_SCENES = {
+  1: { src: 'assets/story-01.svg', caption: 'Kalulu outwits the gathered animals at the great feast' },
+  2: { src: 'assets/story-02.svg', caption: 'Hyena discovers Kalulu\'s clever deception in the bush' },
+  3: { src: 'assets/story-03.svg', caption: 'Kalulu leaps safely across the backs of the river crocodiles' },
+  4: { src: 'assets/story-04.svg', caption: 'Kalulu outsmarting the cunning farmer\'s snare trap' },
+  5: { src: 'assets/story-05.svg', caption: 'The great tug-of-war between the elephant and hippopotamus' },
+  6: { src: 'assets/story-06.svg', caption: 'Leopard searching in vain for the quick-footed hare' },
+  7: { src: 'assets/covers/corrected-07.png', caption: 'Chimuka standing firm and brave against the school bully' },
+  8: { src: 'assets/covers/corrected-08.png', caption: 'The children embarking on their long journey to Tanzania' },
+  9: { src: 'assets/covers/corrected-09.png', caption: 'Arriving across the northern borders at twilight' },
+  10: { src: 'assets/covers/corrected-10.png', caption: 'Searching deep in the bush for the farmer\'s lost calf' },
+  11: { src: 'assets/covers/corrected-11.png', caption: 'Elders sharing timeless ancestral wisdom around the fire' },
+  12: { src: 'assets/covers/corrected-12.png', caption: 'Safely crossing the flooded river during heavy rains' },
+  13: { src: 'assets/covers/corrected-13.png', caption: 'Harvesting sweet wild honey from the hollow trunk of the baobab' },
+  14: { src: 'assets/covers/corrected-14.png', caption: 'The sacred bird revealing truth to the village chief' },
+  15: { src: 'assets/covers/corrected-15.png', caption: 'Working side by side to build the new village school' },
+  16: { src: 'assets/covers/original-16.png', caption: 'Jelita and Mulenga helping at the bustling community market' },
+  17: { src: 'assets/covers/original-17.png', caption: 'Jelita and Mulenga\'s science discovery walk through nature' },
+  18: { src: 'assets/covers/original-18.png', caption: 'Finding the ancient pathway along the Zambezi riverbanks' },
+  19: { src: 'assets/covers/original-19.png', caption: 'Celebrating school excellence and teamwork at the assembly' },
+  20: { src: 'assets/covers/northwestern-20.png', caption: 'Chisola and Bernice gathering wild forest fruit near Solwezi' },
+  21: { src: 'assets/covers/northwestern-21.png', caption: 'Chawana and Vumbi crossing the historic Kabompo footbridge' },
+  22: { src: 'assets/covers/northwestern-22.png', caption: 'Wana observing the honeyguide bird in the open woodland' },
+  23: { src: 'assets/covers/northwestern-23.png', caption: 'Chishomyo practicing traditional bamboo basket weaving' },
+  24: { src: 'assets/covers/northwestern-24.png', caption: 'Chiwape exploring the sacred Mukenge riverbanks' },
+  25: { src: 'assets/covers/northwestern-25.png', caption: 'The village community gathering for the traditional harvest festival' },
+  26: { src: 'assets/covers/story-26.svg', caption: 'Kalulu encountering the mysterious clay man in the orchard' },
+  27: { src: 'assets/covers/story-27.svg', caption: 'Kalulu and the enchanted cooking pot during the dry season' },
+  28: { src: 'assets/covers/story-28.svg', caption: 'Chameleon matching pace with the swift hare' },
+  29: { src: 'assets/covers/story-29.svg', caption: 'Kalulu riding triumphantly upon the lion\'s back' },
+  30: { src: 'assets/covers/story-30.svg', caption: 'The great council of waterbirds at the marsh' },
+  31: { src: 'assets/covers/story-31.svg', caption: 'Kalulu finding refuge beneath the baobab as the bush burns' },
+  32: { src: 'assets/covers/story-32.svg', caption: 'The village healer inspecting the medicine bundle' },
+  33: { src: 'assets/covers/story-33.svg', caption: 'The chief setting the test of wisdom and courage' },
+  34: { src: 'assets/covers/story-34.svg', caption: 'The enchanted rhythm of the drum sounding through the trees' },
+  35: { src: 'assets/covers/story-35.svg', caption: 'The magic calabash overflowing with grain and bounty' },
+  36: { src: 'assets/covers/story-36.svg', caption: 'The three brothers following the golden guinea-fowl' },
+  37: { src: 'assets/covers/story-37.svg', caption: 'The hunter listening to the secret language of the animals' },
+  38: { src: 'assets/covers/story-38.svg', caption: 'The talking baobab tree echoing across the Luangwa valley' },
+  39: { src: 'assets/covers/story-39.svg', caption: 'The hidden pool discovered in the limestone caves' },
+  40: { src: 'assets/covers/story-40.svg', caption: 'The wise elder settling the dispute between the two fishermen' },
+  41: { src: 'assets/covers/story-41.svg', caption: 'The furious swarm of bees attacking the honey-covered lion' },
+  42: { src: 'assets/covers/story-42.svg', caption: 'Crocodile holding fast to Ostrich\'s head while Ostrich pulls back' },
+  43: { src: 'assets/covers/story-43.svg', caption: 'Hippo plunging into the river waters to soothe his burnt skin' },
+  44: { src: 'assets/covers/story-44.svg', caption: 'Crocodile retreating to the deep murky river pools' },
+  45: { src: 'assets/covers/story-45.svg', caption: 'Tortoise\'s shell shattering into fragments upon the rocks' },
+  46: { src: 'assets/covers/story-46.svg', caption: 'Baboon leaping in shock from the red-hot river rock' },
+  47: { src: 'assets/covers/story-47.svg', caption: 'Warthog charging swiftly with his tail pointing skyward' },
+  48: { src: 'assets/covers/story-48.svg', caption: 'Elephant squinting his small watchful eyes in the midday sun' },
+  49: { src: 'assets/covers/story-49.svg', caption: 'White spots splashing across the plumage of Guinea-fowl' },
+  50: { src: 'assets/covers/story-50.svg', caption: 'Hyena limping silently through the moonlight' },
+  51: { src: 'assets/covers/story-51.svg', caption: 'Zebra admiring his newly earned striped black and white coat' },
+  52: { src: 'assets/covers/story-52.svg', caption: 'Leopard resting high in the branches with his spotted coat' },
+  53: { src: 'assets/covers/story-53.svg', caption: 'Monkey making his permanent home among the treetops' },
+  54: { src: 'assets/covers/story-54.svg', caption: 'Rhinoceros searching the tall grasses for his lost horn' },
+  55: { src: 'assets/covers/story-55.svg', caption: 'Giraffe reaching the highest tender leaves of the baobab' },
+  56: { src: 'assets/covers/story-56.svg', caption: 'Owl emerging under the stars as darkness settles over the forest' },
+  57: { src: 'assets/covers/story-57.svg', caption: 'Snake gliding silently through the grass with no need for legs' },
+  58: { src: 'assets/covers/story-58.svg', caption: 'Fish swimming freely in the cool mountain streams' },
+  59: { src: 'assets/covers/story-59.svg', caption: 'Crab scuttling sideways along the riverbank' },
+  60: { src: 'assets/covers/story-60.svg', caption: 'Chameleon blending invisibly into the leaves to stay safe' }
+};
+
+function getContextualScene(storyId) {
+  return STORY_CONTEXTUAL_SCENES[storyId] || null;
+}
+
 // --- Local Storage Progress & State ---
 const STORAGE_KEY = 'baobab-learning-v1';
 function loadState() {
@@ -203,12 +271,14 @@ function paginateStoryIntoPages(story) {
 
     // Check if this is the final page of the story
     const isFinal = (idx >= body.length);
+    const contextualImage = (!isFinal && pages.length === 1) ? getContextualScene(story.id) : null;
     pages.push({
       type: isFinal ? 'story-end' : 'story-body',
       storyId: story.id,
       title: story.title,
       chapter: story.chapter,
       items: pageItems,
+      contextualImage: contextualImage,
       lesson: isFinal ? story.lesson : null,
       story: isFinal ? story : null
     });
@@ -488,12 +558,21 @@ function renderPageContent(page, story) {
   }
 
   if (page.type === 'story-body') {
+    const spot = page.contextualImage;
     return `
-      <div class="story-narrative">
-        ${page.items.map(b => {
-          if (b.type === 'subheading') return `<h3 class="subheading-title">${esc(b.text)}</h3>`;
-          return `<p class="story-para">${esc(b.text)}</p>`;
-        }).join('')}
+      <div>
+        ${spot ? `
+          <figure class="story-spot-figure">
+            <img src="${spot.src}" alt="${esc(spot.caption)}" class="story-spot-img" loading="lazy">
+            <figcaption class="story-spot-caption">${esc(spot.caption)}</figcaption>
+          </figure>
+        ` : ''}
+        <div class="story-narrative">
+          ${page.items.map(b => {
+            if (b.type === 'subheading') return `<h3 class="subheading-title">${esc(b.text)}</h3>`;
+            return `<p class="story-para">${esc(b.text)}</p>`;
+          }).join('')}
+        </div>
       </div>
     `;
   }
@@ -568,27 +647,35 @@ function renderStoryCompanionPage(story) {
   const isDone = state.read.includes(story.id);
   const nextStoryId = story.id < 60 ? story.id + 1 : null;
   const nextStory = nextStoryId ? storyById(nextStoryId) : null;
+  const spot = getContextualScene(story.id);
 
   return `
-    <div style="height:100%; display:flex; flex-direction:column; justify-content:space-between; padding: 14px 6px;">
+    <div style="height:100%; display:flex; flex-direction:column; justify-content:space-between; padding: 10px 4px;">
       <div>
         <span class="chapter-badge">Chapter ${story.id} Reflection</span>
-        <h3 style="font-size:1.25rem; color:var(--accent); margin: 6px 0 14px;">"${esc(story.title)}"</h3>
-        <p style="font-style:italic; line-height:1.7; font-size:0.95rem; opacity:0.9;">
+        <h3 style="font-size:1.25rem; color:var(--accent); margin: 6px 0 10px;">"${esc(story.title)}"</h3>
+        <p style="font-style:italic; line-height:1.65; font-size:0.92rem; opacity:0.9; margin: 0 0 10px;">
           "${esc(story.lesson)}"
         </p>
       </div>
 
-      <div style="text-align:center; padding: 20px; border:1px solid var(--page-border); border-radius:10px; background:color-mix(in srgb, var(--accent) 6%, var(--paper));">
-        <div style="font-size:2rem; margin-bottom:8px;">&#127795;</div>
+      ${spot ? `
+        <figure class="companion-figure">
+          <img src="${spot.src}" alt="${esc(spot.caption)}" class="companion-img" loading="lazy">
+          <figcaption class="companion-caption">${esc(spot.caption)}</figcaption>
+        </figure>
+      ` : ''}
+
+      <div style="text-align:center; padding: 14px; border:1px solid var(--page-border); border-radius:10px; background:color-mix(in srgb, var(--accent) 6%, var(--paper));">
+        <div style="font-size:1.6rem; margin-bottom:4px;">&#127795;</div>
         ${nextStory ? `
           <small style="text-transform:uppercase; font-weight:700; color:var(--accent); letter-spacing:0.06em;">Up Next</small>
-          <h4 style="margin:4px 0 12px; font-size:1.1rem;">Chapter ${nextStoryId}: ${esc(nextStory.title)}</h4>
-          <button class="tool-btn" style="background:var(--accent); color:#fff; padding:7px 18px;" onclick="goToChapter(${nextStoryId})">
+          <h4 style="margin:4px 0 10px; font-size:1.05rem;">Chapter ${nextStoryId}: ${esc(nextStory.title)}</h4>
+          <button class="tool-btn" style="background:var(--accent); color:#fff; padding:6px 18px;" onclick="goToChapter(${nextStoryId})">
             Continue Reading &#10148;
           </button>
         ` : `
-          <p>You have reached the final chapter of Stories from the Baobab Tree.</p>
+          <p style="font-size:0.88rem; margin:0;">You have reached the final chapter of Stories from the Baobab Tree.</p>
         `}
       </div>
 

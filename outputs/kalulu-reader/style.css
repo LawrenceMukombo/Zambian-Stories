@@ -621,6 +621,56 @@ main.book-stage {
   border: 1px solid var(--page-border);
 }
 
+/* In-Page Contextual Story Spot Illustrations */
+.story-spot-figure {
+  margin: 12px 0 16px;
+  text-align: center;
+}
+.story-spot-img {
+  width: 100%;
+  max-height: 210px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--page-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+.story-spot-caption {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+  padding: 0 8px;
+}
+
+/* Companion Page Reflection Spot Illustration */
+.companion-figure {
+  margin: 10px 0 14px;
+  text-align: center;
+}
+.companion-img {
+  width: 100%;
+  max-height: 190px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--page-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  display: block;
+  margin: 0 auto;
+}
+.companion-caption {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+  padding: 0 8px;
+}
+
 /* Classical Drop Cap */
 p.story-lead:first-of-type::first-letter {
   float: left;
