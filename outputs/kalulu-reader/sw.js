@@ -1,4 +1,4 @@
-const C = 'baobab-reader-v25';
+const C = 'baobab-reader-v26';
 const CORE = [
   './',
   'index.html',

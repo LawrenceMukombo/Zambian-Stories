@@ -3,8 +3,10 @@ from pathlib import Path
 
 DEST_DIRS = [
     Path(r"c:\folk_tale_stories\outputs\kalulu-reader\assets\covers"),
-    Path(r"c:\folk_tale_stories\outputs\kalulu-android\www\assets\covers")
+    Path(r"c:\folk_tale_stories\outputs\kalulu-android\www\assets\covers"),
+    Path(r"c:\folk_tale_stories\work\epub-current\OEBPS\images")
 ]
+
 
 STORIES = [
     (
@@ -753,6 +755,7 @@ STORIES = [
 ]
 
 def generate_svg(story_id, title, subtitle, content):
+    escaped_title = title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
   <defs>
     <filter id="shadow">
@@ -765,8 +768,8 @@ def generate_svg(story_id, title, subtitle, content):
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
     <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
-    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER {story_id} &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">{title}</text>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER {story_id} &#183; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">{escaped_title}</text>
   </g>
 </svg>
 """
