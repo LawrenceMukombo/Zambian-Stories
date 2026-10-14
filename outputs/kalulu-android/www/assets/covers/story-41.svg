@@ -5,52 +5,47 @@
     </filter>
   </defs>
   
-     <!-- Lion & Honey Scene -->
-     <defs>
-       <linearGradient id="sky41" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="55%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#fef3c7"/></linearGradient>
-       <linearGradient id="sun41" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ea580c"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
-       <linearGradient id="grass41" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#78350f"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#sky41)"/>
-     <circle cx="680" cy="110" r="65" fill="url(#sun41)" opacity="0.85"/>
-     <path d="M0 320 Q200 290 400 320 T800 310 L800 450 L0 450 Z" fill="#92400e" opacity="0.6"/>
-     <path d="M0 350 Q250 330 500 360 T800 340 L800 450 L0 450 Z" fill="url(#grass41)"/>
-     <!-- Acacia Tree -->
-     <path d="M120 370 L135 220 L110 180 M135 220 L160 170 M135 250 L180 230" stroke="#451a03" stroke-width="8" stroke-linecap="round"/>
-     <ellipse cx="140" cy="165" rx="90" ry="22" fill="#365314" opacity="0.9"/>
-     <ellipse cx="170" cy="155" rx="60" ry="16" fill="#4d7c0f" opacity="0.8"/>
-     <!-- Honey Pot -->
-     <ellipse cx="250" cy="385" rx="30" ry="12" fill="#78350f"/>
-     <path d="M225 385 C220 350 230 330 250 330 C270 330 280 350 275 385 Z" fill="#b45309"/>
-     <ellipse cx="250" cy="330" rx="18" ry="7" fill="#fbbf24"/>
-     <!-- Golden Lion Silhouette & Face -->
-     <g transform="translate(420, 210)">
-       <!-- Mane -->
-       <path d="M110 50 C50 -20 180 -30 200 40 C240 10 260 90 220 130 C250 170 190 220 130 190 C80 210 40 160 60 120 C30 80 70 30 110 50 Z" fill="#9a3412"/>
-       <!-- Body -->
-       <path d="M140 150 C180 140 240 150 290 190 L270 210 L160 210 Z" fill="#c2410c"/>
-       <!-- Head -->
-       <ellipse cx="135" cy="100" rx="42" ry="48" fill="#ea580c"/>
-       <!-- Muzzle -->
-       <ellipse cx="135" cy="120" rx="24" ry="18" fill="#fef3c7"/>
-       <polygon points="135,112 127,120 143,120" fill="#451a03"/>
-       <!-- Roaring Mouth -->
-       <path d="M125 125 Q135 142 145 125 Z" fill="#7f1d1d"/>
-       <!-- Eyes -->
-       <ellipse cx="120" cy="95" rx="5" ry="4" fill="#451a03"/>
-       <ellipse cx="150" cy="95" rx="5" ry="4" fill="#451a03"/>
-       <!-- Ears -->
-       <circle cx="102" cy="62" r="14" fill="#ea580c"/>
-       <circle cx="168" cy="62" r="14" fill="#ea580c"/>
-     </g>
-     <!-- Flying Bees -->
-     <g fill="#fbbf24">
-       <circle cx="330" cy="270" r="5"/><circle cx="338" cy="265" r="4"/><circle cx="355" cy="280" r="5"/><circle cx="370" cy="260" r="4"/><circle cx="385" cy="290" r="5"/>
-     </g>
-     
+  
+        <linearGradient id="sky41" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="100%" stop-color="#fed7aa"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky41)"/>
+        <rect y="310" width="800" height="140" fill="#78350f"/>
+        <!-- Baobab Tree -->
+        <path d="M540 340 C520 220 560 140 640 100 C720 140 760 220 740 340 Z" fill="#451a03"/>
+        <ellipse cx="640" cy="90" rx="130" ry="70" fill="#15803d"/>
+        <!-- Honeycomb Hollow -->
+        <ellipse cx="635" cy="190" rx="28" ry="38" fill="#1c1917"/>
+        <ellipse cx="635" cy="190" rx="20" ry="28" fill="#eab308"/>
+        <!-- Sleeping Lion -->
+        <g transform="translate(180, 220)">
+          <!-- Lion Body -->
+          <ellipse cx="160" cy="95" rx="100" ry="55" fill="#d97706"/>
+          <!-- Legs -->
+          <rect x="75" y="120" width="28" height="40" rx="8" fill="#b45309"/>
+          <rect x="210" y="120" width="28" height="40" rx="8" fill="#b45309"/>
+          <!-- Thick Dark Mane -->
+          <circle cx="80" cy="65" r="58" fill="#78350f"/>
+          <!-- Lion Head -->
+          <circle cx="80" cy="65" r="38" fill="#d97706"/>
+          <!-- Eyes sleeping & muzzle -->
+          <path d="M68 62 Q75 66 82 62" stroke="#451a03" stroke-width="3" fill="none"/>
+          <ellipse cx="60" cy="74" rx="12" ry="8" fill="#fde68a"/>
+          <circle cx="56" cy="72" r="4" fill="#1c1917"/>
+          <path d="M260 95 Q290 80 280 60" stroke="#d97706" stroke-width="8" stroke-linecap="round" fill="none"/>
+        </g>
+        <!-- Swarming Angry Bees -->
+        <g fill="#eab308" stroke="#1c1917" stroke-width="2">
+          <ellipse cx="480" cy="180" rx="10" ry="6"/><circle cx="488" cy="180" r="3" fill="#38bdf8"/>
+          <ellipse cx="510" cy="160" rx="9" ry="5"/><circle cx="517" cy="160" r="3" fill="#38bdf8"/>
+          <ellipse cx="450" cy="210" rx="11" ry="7"/><circle cx="458" cy="210" r="3" fill="#38bdf8"/>
+          <ellipse cx="420" cy="170" rx="8" ry="5"/><circle cx="426" cy="170" r="3" fill="#38bdf8"/>
+          <ellipse cx="380" cy="230" rx="10" ry="6"/><circle cx="388" cy="230" r="3" fill="#38bdf8"/>
+          <ellipse cx="350" cy="190" rx="9" ry="5"/><circle cx="357" cy="190" r="3" fill="#38bdf8"/>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 41 &middot; LANSDOWN TALES</text>
     <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Lion Roars</text>
   </g>

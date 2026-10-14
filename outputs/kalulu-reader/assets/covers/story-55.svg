@@ -5,40 +5,48 @@
     </filter>
   </defs>
   
-     <defs>
-       <linearGradient id="sunset55" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c026d3"/><stop offset="40%" stop-color="#ea580c"/><stop offset="80%" stop-color="#facc15"/><stop offset="100%" stop-color="#fed7aa"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#sunset55)"/>
-     <!-- Giant Glowing Sun on Horizon -->
-     <circle cx="480" cy="270" r="85" fill="#fef08a" opacity="0.95"/>
-     <rect y="340" width="800" height="110" fill="#1c1917"/>
-     <!-- Tall Acacia Canopy -->
-     <ellipse cx="650" cy="120" rx="110" ry="30" fill="#1c1917"/>
-     <path d="M640 340 L650 120" stroke="#1c1917" stroke-width="12"/>
-     <!-- Tall Elegant Giraffe Reaching Up -->
-     <g transform="translate(320, 60)">
-       <!-- Towering Neck -->
-       <path d="M90 280 L160 50 L185 55 L135 280 Z" fill="#d97706"/>
-       <!-- Giraffe Head & Horns -->
-       <polygon points="160,50 190,40 185,60" fill="#d97706"/>
-       <line x1="170" y1="42" x2="170" y2="30" stroke="#78350f" stroke-width="4"/>
-       <!-- Sloping Body -->
-       <ellipse cx="90" cy="280" rx="60" ry="40" fill="#d97706"/>
-       <!-- Long Legs -->
-       <path d="M60 300 L55 380 M120 300 L125 380" stroke="#b45309" stroke-width="8"/>
-       <!-- Patches -->
-       <g fill="#78350f" opacity="0.8">
-         <rect x="135" y="80" width="16" height="20" rx="4"/>
-         <rect x="125" y="120" width="18" height="24" rx="4"/>
-         <rect x="115" y="165" width="20" height="26" rx="4"/>
-         <rect x="105" y="215" width="22" height="28" rx="4"/>
-       </g>
-     </g>
-     
+  
+        <linearGradient id="sky55" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="100%" stop-color="#fed7aa"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky55)"/>
+        <rect y="310" width="800" height="140" fill="#854d0e"/>
+        <!-- Giant Mighty Elephant -->
+        <g transform="translate(120, 80)">
+          <!-- Huge Body -->
+          <ellipse cx="260" cy="170" rx="190" ry="130" fill="#64748b"/>
+          <!-- Massive Tree-Trunk Legs -->
+          <rect x="120" y="240" width="55" height="110" rx="12" fill="#475569"/>
+          <rect x="230" y="240" width="55" height="110" rx="12" fill="#475569"/>
+          <rect x="340" y="240" width="55" height="110" rx="12" fill="#475569"/>
+          <!-- Head and Huge Flapping Ear -->
+          <circle cx="95" cy="150" r="75" fill="#64748b"/>
+          <ellipse cx="130" cy="150" rx="45" ry="65" fill="#475569"/>
+          <!-- Curious Curved Trunk lifting in surprise -->
+          <path d="M45 160 C0 210 10 270 45 280 C65 285 60 260 45 250 C25 240 25 200 65 175 Z" fill="#64748b"/>
+          <!-- Small Watchful Eye and White Tusk -->
+          <circle cx="70" cy="135" r="6" fill="#facc15"/>
+          <circle cx="70" cy="135" r="3" fill="#000"/>
+          <path d="M75 195 Q30 220 20 200 Q45 190 75 185 Z" fill="#f8fafc"/>
+        </g>
+        <!-- Tiny Brave Mouse on the Ground Looking Up -->
+        <g transform="translate(620, 340)">
+          <!-- Mouse Body -->
+          <ellipse cx="40" cy="35" rx="26" ry="16" fill="#78716c"/>
+          <!-- Round Ears -->
+          <circle cx="28" cy="22" r="10" fill="#a8a29e"/>
+          <circle cx="28" cy="22" r="5" fill="#f472b6"/>
+          <!-- Pointed Snout and Whiskers -->
+          <polygon points="16,32 0,38 18,42" fill="#78716c"/>
+          <circle cx="1" cy="38" r="3" fill="#000"/>
+          <circle cx="16" cy="32" r="3" fill="#000"/>
+          <!-- Long Curled Tail -->
+          <path d="M66 35 Q105 20 100 50" stroke="#f472b6" stroke-width="3" fill="none"/>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 55 &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Giraffe Has a Long Neck</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Elephant Fears the Mouse</text>
   </g>
 </svg>

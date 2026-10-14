@@ -1,1 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8ecf2"/><stop offset="1" stop-color="#fff8e8"/></linearGradient><filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="46"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.09"/></feComponentTransfer></filter></defs><rect width="1080" height="1440" rx="54" fill="url(#g)"/><rect width="1080" height="1440" rx="54" filter="url(#paper)"/><circle cx="870" cy="230" r="86" fill="#2e7d67" opacity=".22"/><circle cx="214" cy="262" r="136" fill="#fff" opacity=".30"/><path d="M150 1030 C255 920 390 900 540 1010 C690 900 825 920 930 1030 C815 1170 660 1220 540 1135 C420 1220 265 1170 150 1030Z" fill="#123c42" opacity=".14"/><path d="M170 1010 C320 930 430 930 540 1010 C650 930 760 930 910 1010" fill="none" stroke="#123c42" stroke-width="18" stroke-linecap="round" opacity=".28"/><text x="540" y="190" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="2" fill="#2e7d67">LANSDOWN COLLECTION 6</text><text x="540" y="372" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="58" font-weight="700" fill="#123c42">Why the Hare Drinks</text><text x="540" y="448" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="58" font-weight="700" fill="#123c42">Dew</text><text x="540" y="1265" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="30" fill="#123c42" opacity=".75">Why the Lion Roars and Other Animal Stories</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  
+        <linearGradient id="sky46" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#fbcfe8"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky46)"/>
+        <rect y="310" width="800" height="140" fill="#15803d"/>
+        <!-- Large Green Leaves Overhanging with Sparkling Dew -->
+        <g transform="translate(100, 80)">
+          <path d="M0 80 Q150 10 320 70 Q160 130 0 80 Z" fill="#16a34a"/>
+          <path d="M120 75 Q260 20 400 90 Q250 150 120 75 Z" fill="#22c55e"/>
+          <!-- Dew Drops sparkling -->
+          <circle cx="240" cy="80" r="12" fill="#38bdf8" opacity="0.85"/>
+          <circle cx="237" cy="76" r="4" fill="#fff"/>
+          <circle cx="340" cy="95" r="16" fill="#38bdf8" opacity="0.85"/>
+          <circle cx="335" cy="90" r="5" fill="#fff"/>
+        </g>
+        <!-- Hare Reaching Up to Sip -->
+        <g transform="translate(380, 180)">
+          <!-- Body standing on hind legs -->
+          <ellipse cx="100" cy="130" rx="55" ry="70" fill="#d97706"/>
+          <circle cx="100" cy="140" r="45" fill="#fef3c7"/>
+          <!-- Tail -->
+          <circle cx="155" cy="170" r="16" fill="#fff"/>
+          <!-- Head tilted up -->
+          <circle cx="80" cy="60" r="32" fill="#d97706"/>
+          <!-- Long Upright Ears -->
+          <ellipse cx="65" cy="5" rx="10" ry="38" fill="#d97706" transform="rotate(-10 65 5)"/>
+          <ellipse cx="65" cy="5" rx="5" ry="28" fill="#f472b6" transform="rotate(-10 65 5)"/>
+          <ellipse cx="90" cy="10" rx="10" ry="38" fill="#d97706" transform="rotate(10 90 10)"/>
+          <ellipse cx="90" cy="10" rx="5" ry="28" fill="#f472b6" transform="rotate(10 90 10)"/>
+          <!-- Tiny nose touching dewdrops -->
+          <circle cx="60" cy="50" r="4" fill="#f43f5e"/>
+          <circle cx="75" cy="52" r="5" fill="#000"/>
+        </g>
+        
+  
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 46 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Hare Drinks Dew</text>
+  </g>
+</svg>

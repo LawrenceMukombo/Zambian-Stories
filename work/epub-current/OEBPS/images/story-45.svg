@@ -1,1 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7e1a1"/><stop offset="1" stop-color="#fff8e8"/></linearGradient><filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="45"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.09"/></feComponentTransfer></filter></defs><rect width="1080" height="1440" rx="54" fill="url(#g)"/><rect width="1080" height="1440" rx="54" filter="url(#paper)"/><circle cx="870" cy="230" r="86" fill="#d75a35" opacity=".22"/><circle cx="214" cy="262" r="136" fill="#fff" opacity=".30"/><path d="M150 1030 C255 920 390 900 540 1010 C690 900 825 920 930 1030 C815 1170 660 1220 540 1135 C420 1220 265 1170 150 1030Z" fill="#0e3b35" opacity=".14"/><path d="M170 1010 C320 930 430 930 540 1010 C650 930 760 930 910 1010" fill="none" stroke="#0e3b35" stroke-width="18" stroke-linecap="round" opacity=".28"/><text x="540" y="190" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="2" fill="#d75a35">LANSDOWN COLLECTION 5</text><text x="540" y="410" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="58" font-weight="700" fill="#0e3b35">Why the Hyena Laughs</text><text x="540" y="1265" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="30" fill="#0e3b35" opacity=".75">Why the Lion Roars and Other Animal Stories</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  
+        <linearGradient id="sky45" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="100%" stop-color="#fed7aa"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky45)"/>
+        <rect y="290" width="800" height="160" fill="#a16207"/>
+        <circle cx="180" cy="120" r="45" fill="#fef08a" opacity="0.6"/>
+        <!-- Sloping Savanna Ridge -->
+        <path d="M0 320 Q400 280 800 310 L800 450 L0 450 Z" fill="#78350f"/>
+        <!-- Spotted Laughing Hyena -->
+        <g transform="translate(300, 160)">
+          <!-- Sloping Body -->
+          <path d="M80 80 L220 120 L200 170 L70 150 Z" fill="#a8a29e"/>
+          <circle cx="140" cy="115" r="50" fill="#a8a29e"/>
+          <!-- Hyena Spots -->
+          <circle cx="120" cy="110" r="7" fill="#44403c"/>
+          <circle cx="150" cy="100" r="8" fill="#44403c"/>
+          <circle cx="170" cy="125" r="6" fill="#44403c"/>
+          <circle cx="140" cy="135" r="7" fill="#44403c"/>
+          <!-- High Shoulders, Lower Hindquarters -->
+          <rect x="75" y="145" width="22" height="65" rx="6" fill="#78716c"/>
+          <rect x="180" y="145" width="20" height="50" rx="6" fill="#78716c"/>
+          <!-- Head with Wide Grinning Open Mouth -->
+          <circle cx="65" cy="80" r="42" fill="#a8a29e"/>
+          <!-- Big Rounded Ears -->
+          <circle cx="85" cy="45" r="18" fill="#57534e"/>
+          <circle cx="50" cy="48" r="16" fill="#57534e"/>
+          <!-- Gaping Laughing Jaws with Teeth -->
+          <path d="M35 85 Q70 80 85 105 Q55 118 35 85 Z" fill="#1c1917"/>
+          <polygon points="40,86 46,94 52,86" fill="#fff"/>
+          <polygon points="56,86 62,94 68,86" fill="#fff"/>
+          <polygon points="45,108 50,100 55,108" fill="#fff"/>
+          <!-- Mischievous Eye -->
+          <circle cx="58" cy="72" r="5" fill="#facc15"/>
+          <circle cx="58" cy="72" r="2" fill="#000"/>
+        </g>
+        
+  
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 45 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Hyena Laughs</text>
+  </g>
+</svg>

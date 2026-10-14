@@ -5,42 +5,39 @@
     </filter>
   </defs>
   
-     <defs>
-       <linearGradient id="water58" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#0284c7"/><stop offset="100%" stop-color="#0c4a6e"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#water58)"/>
-     <!-- Sunlight Beams Down Into Water -->
-     <polygon points="120,0 220,0 350,450 180,450" fill="#ffffff" opacity="0.12"/>
-     <polygon points="400,0 520,0 680,450 500,450" fill="#ffffff" opacity="0.12"/>
-     <!-- Riverbed Pebbles -->
-     <g fill="#78716c">
-       <circle cx="100" cy="430" r="25"/><circle cx="160" cy="435" r="18"/><circle cx="340" cy="440" r="28"/><circle cx="580" cy="430" r="32"/><circle cx="680" cy="438" r="22"/>
-     </g>
-     <!-- Main Beautiful African Tigerfish / Tilapia -->
-     <g transform="translate(300, 170)">
-       <!-- Fish Body -->
-       <ellipse cx="120" cy="70" rx="85" ry="45" fill="#f59e0b"/>
-       <!-- Scales Pattern -->
-       <path d="M90 40 Q110 70 90 100 M120 35 Q140 70 120 105 M150 40 Q170 70 150 100" stroke="#b45309" stroke-width="4" fill="none"/>
-       <!-- Tail Fin -->
-       <polygon points="200,70 260,25 240,70 260,115" fill="#ea580c"/>
-       <!-- Top Dorsal Fin -->
-       <polygon points="90,26 140,5 170,30" fill="#ea580c"/>
-       <!-- Pectoral Fin -->
-       <polygon points="80,75 50,105 90,95" fill="#f97316"/>
-       <!-- Eye -->
-       <circle cx="55" cy="60" r="9" fill="#fef08a"/>
-       <circle cx="55" cy="60" r="5" fill="#0c4a6e"/>
-     </g>
-     <!-- Air Bubbles -->
-     <circle cx="280" cy="180" r="6" fill="#bae6fd" opacity="0.7"/>
-     <circle cx="260" cy="140" r="4" fill="#bae6fd" opacity="0.7"/>
-     <circle cx="270" cy="100" r="8" fill="#bae6fd" opacity="0.7"/>
-     
+  
+        <linearGradient id="sky58" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#bbf7d0"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky58)"/>
+        <!-- Jungle Canopy Vines & Leaves -->
+        <path d="M0 80 Q200 140 400 90 T800 120" stroke="#15803d" stroke-width="16" fill="none"/>
+        <path d="M0 40 Q400 20 800 40" stroke="#166534" stroke-width="30" fill="none"/>
+        <!-- Playful Vervet Monkey Hanging from Branch -->
+        <g transform="translate(320, 100)">
+          <!-- Tail wrapped around vine -->
+          <path d="M120 70 Q160 0 110 -20 Q80 -10 110 30" stroke="#78716c" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <!-- Body -->
+          <ellipse cx="90" cy="120" rx="45" ry="60" fill="#78716c"/>
+          <ellipse cx="90" cy="130" rx="30" ry="40" fill="#d6d3d1"/>
+          <!-- Long Expressive Arms -->
+          <path d="M60 100 Q10 130 30 170" stroke="#78716c" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <path d="M120 100 Q170 120 150 170" stroke="#78716c" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <!-- Human-like Face & Expressive Eyes -->
+          <circle cx="90" cy="55" r="32" fill="#78716c"/>
+          <ellipse cx="90" cy="60" rx="22" ry="18" fill="#1c1917"/>
+          <circle cx="82" cy="56" r="5" fill="#facc15"/>
+          <circle cx="82" cy="56" r="2.5" fill="#000"/>
+          <circle cx="98" cy="56" r="5" fill="#facc15"/>
+          <circle cx="98" cy="56" r="2.5" fill="#000"/>
+          <!-- Ears -->
+          <circle cx="60" cy="55" r="10" fill="#d6d3d1"/>
+          <circle cx="120" cy="55" r="10" fill="#d6d3d1"/>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 58 &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Fish Lives in Water</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Monkeys Resemble People</text>
   </g>
 </svg>

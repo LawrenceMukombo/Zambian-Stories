@@ -5,37 +5,53 @@
     </filter>
   </defs>
   
-     <defs>
-       <linearGradient id="sky59" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="50%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#93c5fd"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#sky59)"/>
-     <rect y="280" width="800" height="170" fill="#d97706"/>
-     <!-- Wet Water Edge -->
-     <path d="M0 360 Q400 320 800 370 L800 450 L0 450 Z" fill="#0284c7" opacity="0.8"/>
-     <!-- River Crab Walking Sideways with Raised Claws -->
-     <g transform="translate(310, 200)">
-       <!-- Shell Carapace -->
-       <ellipse cx="100" cy="80" rx="60" ry="42" fill="#dc2626"/>
-       <!-- Big Left Pincer Claw -->
-       <path d="M45 70 Q-10 40 10 0 Q35 25 35 60 Z" fill="#ef4444"/>
-       <!-- Big Right Pincer Claw -->
-       <path d="M155 70 Q210 40 190 0 Q165 25 165 60 Z" fill="#ef4444"/>
-       <!-- Walking Legs on Left and Right -->
-       <path d="M50 90 L10 120 M55 100 L20 135 M60 110 L30 148" stroke="#b91c1c" stroke-width="8" stroke-linecap="round"/>
-       <path d="M150 90 L190 120 M145 100 L180 135 M140 110 L170 148" stroke="#b91c1c" stroke-width="8" stroke-linecap="round"/>
-       <!-- Stalk Eyes -->
-       <line x1="85" y1="42" x2="80" y2="22" stroke="#dc2626" stroke-width="6"/>
-       <circle cx="80" cy="20" r="7" fill="#fef08a"/>
-       <circle cx="80" cy="20" r="3" fill="#000"/>
-       <line x1="115" y1="42" x2="120" y2="22" stroke="#dc2626" stroke-width="6"/>
-       <circle cx="120" cy="20" r="7" fill="#fef08a"/>
-       <circle cx="120" cy="20" r="3" fill="#000"/>
-     </g>
-     
+  
+        <linearGradient id="sky59" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#bbf7d0"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky59)"/>
+        <rect y="310" width="800" height="140" fill="#15803d"/>
+        <!-- Pulu the Graceful Bushbuck -->
+        <g transform="translate(140, 180)">
+          <!-- Bushbuck Reddish-Brown Body -->
+          <ellipse cx="110" cy="90" rx="65" ry="40" fill="#9a3412"/>
+          <!-- White Spots on Flank -->
+          <circle cx="120" cy="85" r="4" fill="#fff"/>
+          <circle cx="135" cy="95" r="4" fill="#fff"/>
+          <circle cx="150" cy="88" r="4" fill="#fff"/>
+          <!-- Legs -->
+          <rect x="70" y="125" width="14" height="60" rx="4" fill="#7c2d12"/>
+          <rect x="140" y="125" width="14" height="60" rx="4" fill="#7c2d12"/>
+          <!-- Elegant Head & Spiral Horns -->
+          <circle cx="50" cy="65" r="24" fill="#9a3412"/>
+          <path d="M45 45 L35 10" stroke="#292524" stroke-width="6" stroke-linecap="round"/>
+          <path d="M55 45 L50 8" stroke="#292524" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="42" cy="62" r="4" fill="#000"/>
+        </g>
+        <!-- Ngolo the Zebra Standing Beside Him -->
+        <g transform="translate(420, 150)">
+          <!-- Zebra Body -->
+          <ellipse cx="130" cy="110" rx="85" ry="55" fill="#f8fafc"/>
+          <!-- Legs -->
+          <rect x="80" y="160" width="18" height="65" rx="5" fill="#f8fafc"/>
+          <rect x="165" y="160" width="18" height="65" rx="5" fill="#f8fafc"/>
+          <!-- Head and Mane -->
+          <circle cx="55" cy="75" r="32" fill="#f8fafc"/>
+          <path d="M55 45 Q75 40 90 65" stroke="#000" stroke-width="8" fill="none"/>
+          <!-- Striking Black Stripes -->
+          <g stroke="#000" stroke-width="8" stroke-linecap="round">
+            <line x1="90" y1="75" x2="95" y2="145"/>
+            <line x1="115" y1="70" x2="120" y2="150"/>
+            <line x1="140" y1="72" x2="145" y2="150"/>
+            <line x1="165" y1="78" x2="170" y2="145"/>
+            <line x1="190" y1="88" x2="192" y2="135"/>
+          </g>
+          <circle cx="42" cy="72" r="4" fill="#000"/>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 59 &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Crab Walks Sideways</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">The Friendship of Pulu and Ngolo</text>
   </g>
 </svg>

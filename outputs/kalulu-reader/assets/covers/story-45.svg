@@ -5,40 +5,46 @@
     </filter>
   </defs>
   
-     <defs>
-       <linearGradient id="sky45" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1e3a8a"/><stop offset="60%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#93c5fd"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#sky45)"/>
-     <!-- Fluffy White Clouds -->
-     <ellipse cx="200" cy="110" rx="90" ry="40" fill="#ffffff" opacity="0.85"/>
-     <ellipse cx="270" cy="95" rx="70" ry="35" fill="#ffffff" opacity="0.9"/>
-     <ellipse cx="580" cy="140" rx="100" ry="45" fill="#ffffff" opacity="0.85"/>
-     <!-- Flying Birds Silhouettes -->
-     <g fill="#1e293b">
-       <path d="M360 80 Q375 60 390 80 Q405 60 420 80 Q390 90 360 80 Z"/>
-       <path d="M470 120 Q482 105 495 120 Q508 105 520 120 Q495 128 470 120 Z"/>
-     </g>
-     <!-- Falling Tortoise with Cracked Pattern Shell -->
-     <g transform="translate(350, 180) rotate(22)">
-       <!-- Domed Shell -->
-       <ellipse cx="60" cy="60" rx="65" ry="48" fill="#b45309"/>
-       <!-- Shell Segments & Fracture Lines -->
-       <path d="M15 60 L105 60 M60 15 L60 105 M35 30 L85 90 M85 30 L35 90" stroke="#fef08a" stroke-width="4"/>
-       <!-- Head & Feet -->
-       <circle cx="130" cy="55" r="16" fill="#15803d"/>
-       <circle cx="134" cy="52" r="3" fill="#000"/>
-       <ellipse cx="30" cy="20" rx="12" ry="8" fill="#15803d"/>
-       <ellipse cx="90" cy="20" rx="12" ry="8" fill="#15803d"/>
-       <ellipse cx="30" cy="100" rx="12" ry="8" fill="#15803d"/>
-       <ellipse cx="90" cy="100" rx="12" ry="8" fill="#15803d"/>
-     </g>
-     <!-- Ground Crags Below -->
-     <polygon points="0,450 150,380 300,420 500,370 700,430 800,360 800,450" fill="#78350f"/>
-     
+  
+        <linearGradient id="sky45" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="100%" stop-color="#fed7aa"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky45)"/>
+        <rect y="290" width="800" height="160" fill="#a16207"/>
+        <circle cx="180" cy="120" r="45" fill="#fef08a" opacity="0.6"/>
+        <!-- Sloping Savanna Ridge -->
+        <path d="M0 320 Q400 280 800 310 L800 450 L0 450 Z" fill="#78350f"/>
+        <!-- Spotted Laughing Hyena -->
+        <g transform="translate(300, 160)">
+          <!-- Sloping Body -->
+          <path d="M80 80 L220 120 L200 170 L70 150 Z" fill="#a8a29e"/>
+          <circle cx="140" cy="115" r="50" fill="#a8a29e"/>
+          <!-- Hyena Spots -->
+          <circle cx="120" cy="110" r="7" fill="#44403c"/>
+          <circle cx="150" cy="100" r="8" fill="#44403c"/>
+          <circle cx="170" cy="125" r="6" fill="#44403c"/>
+          <circle cx="140" cy="135" r="7" fill="#44403c"/>
+          <!-- High Shoulders, Lower Hindquarters -->
+          <rect x="75" y="145" width="22" height="65" rx="6" fill="#78716c"/>
+          <rect x="180" y="145" width="20" height="50" rx="6" fill="#78716c"/>
+          <!-- Head with Wide Grinning Open Mouth -->
+          <circle cx="65" cy="80" r="42" fill="#a8a29e"/>
+          <!-- Big Rounded Ears -->
+          <circle cx="85" cy="45" r="18" fill="#57534e"/>
+          <circle cx="50" cy="48" r="16" fill="#57534e"/>
+          <!-- Gaping Laughing Jaws with Teeth -->
+          <path d="M35 85 Q70 80 85 105 Q55 118 35 85 Z" fill="#1c1917"/>
+          <polygon points="40,86 46,94 52,86" fill="#fff"/>
+          <polygon points="56,86 62,94 68,86" fill="#fff"/>
+          <polygon points="45,108 50,100 55,108" fill="#fff"/>
+          <!-- Mischievous Eye -->
+          <circle cx="58" cy="72" r="5" fill="#facc15"/>
+          <circle cx="58" cy="72" r="2" fill="#000"/>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 45 &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Tortoise Has a Broken Shell</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Hyena Laughs</text>
   </g>
 </svg>

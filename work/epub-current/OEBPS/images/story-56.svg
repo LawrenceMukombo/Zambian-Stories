@@ -1,1 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcedc8"/><stop offset="1" stop-color="#fff8e8"/></linearGradient><filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="56"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.09"/></feComponentTransfer></filter></defs><rect width="1080" height="1440" rx="54" fill="url(#g)"/><rect width="1080" height="1440" rx="54" filter="url(#paper)"/><circle cx="870" cy="230" r="86" fill="#6c8a2b" opacity=".22"/><circle cx="214" cy="262" r="136" fill="#fff" opacity=".30"/><path d="M150 1030 C255 920 390 900 540 1010 C690 900 825 920 930 1030 C815 1170 660 1220 540 1135 C420 1220 265 1170 150 1030Z" fill="#163c32" opacity=".14"/><path d="M170 1010 C320 930 430 930 540 1010 C650 930 760 930 910 1010" fill="none" stroke="#163c32" stroke-width="18" stroke-linecap="round" opacity=".28"/><text x="540" y="190" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="2" fill="#6c8a2b">LANSDOWN COLLECTION 16</text><text x="540" y="372" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="58" font-weight="700" fill="#163c32">Why the Giraffe Has a</text><text x="540" y="448" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="58" font-weight="700" fill="#163c32">Long Neck</text><text x="540" y="1265" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="30" fill="#163c32" opacity=".75">Why the Lion Roars and Other Animal Stories</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  
+        <linearGradient id="sky56" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#67e8f9"/><stop offset="100%" stop-color="#fef08a"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky56)"/>
+        <rect y="330" width="800" height="120" fill="#a16207"/>
+        <!-- Tall Baobab Foliage at Top Right -->
+        <path d="M620 450 L640 180 L680 180 L700 450 Z" fill="#451a03"/>
+        <ellipse cx="660" cy="120" rx="140" ry="70" fill="#15803d"/>
+        <!-- Tall Majestic Giraffe -->
+        <g transform="translate(240, 40)">
+          <!-- Body -->
+          <ellipse cx="140" cy="260" rx="80" ry="55" fill="#f59e0b"/>
+          <!-- Long Slender Legs -->
+          <rect x="90" y="300" width="16" height="130" fill="#d97706"/>
+          <rect x="170" y="300" width="16" height="130" fill="#d97706"/>
+          <!-- Tall Graceful Neck reaching high into leaves -->
+          <path d="M90 240 L260 20 L290 25 L140 250 Z" fill="#f59e0b"/>
+          <!-- Giraffe Head & Horns (Ossicones) -->
+          <ellipse cx="280" cy="18" rx="22" ry="14" fill="#f59e0b"/>
+          <line x1="275" y1="10" x2="270" y2="-4" stroke="#78350f" stroke-width="4"/>
+          <circle cx="270" cy="-4" r="3" fill="#78350f"/>
+          <circle cx="285" cy="15" r="4" fill="#000"/>
+          <!-- Distinctive Polygonal Coat Patches -->
+          <g fill="#78350f">
+            <polygon points="120,240 145,235 140,255 118,255"/>
+            <polygon points="125,190 155,185 150,215 120,215"/>
+            <polygon points="160,150 190,145 185,175 155,175"/>
+            <polygon points="195,110 225,105 220,135 190,135"/>
+            <polygon points="230,70 260,65 255,95 225,95"/>
+          </g>
+        </g>
+        
+  
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 56 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Giraffe Has a Long Neck</text>
+  </g>
+</svg>

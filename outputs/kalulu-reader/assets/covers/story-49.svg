@@ -5,39 +5,44 @@
     </filter>
   </defs>
   
-     <defs>
-       <linearGradient id="sky49" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="70%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#fef08a"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#sky49)"/>
-     <rect y="310" width="800" height="140" fill="#84cc16"/>
-     <!-- Acacia Shrub -->
-     <ellipse cx="640" cy="240" rx="90" ry="30" fill="#4d7c0f"/>
-     <path d="M635 320 L640 240" stroke="#713f12" stroke-width="8"/>
-     <!-- Spotted Guinea Fowl -->
-     <g transform="translate(300, 180)">
-       <!-- Plump Round Body -->
-       <ellipse cx="120" cy="100" rx="75" ry="55" fill="#1e293b"/>
-       <!-- White Polka Dots Everywhere! -->
-       <g fill="#f8fafc">
-         <circle cx="80" cy="80" r="3"/><circle cx="100" cy="75" r="3"/><circle cx="120" cy="80" r="3"/><circle cx="140" cy="85" r="3"/>
-         <circle cx="70" cy="100" r="3"/><circle cx="90" cy="100" r="3"/><circle cx="110" cy="105" r="3"/><circle cx="130" cy="105" r="3"/>
-         <circle cx="85" cy="120" r="3"/><circle cx="105" cy="125" r="3"/><circle cx="125" cy="125" r="3"/><circle cx="145" cy="115" r="3"/>
-         <circle cx="160" cy="100" r="3"/><circle cx="150" cy="95" r="3"/>
-       </g>
-       <!-- Slender Neck & Head with Blue/Red Helmet -->
-       <path d="M60 85 Q40 40 45 25" stroke="#0284c7" stroke-width="12" fill="none" stroke-linecap="round"/>
-       <circle cx="45" cy="20" r="12" fill="#0284c7"/>
-       <polygon points="45,10 52,2 50,15" fill="#dc2626"/>
-       <polygon points="35,22 22,25 35,28" fill="#f59e0b"/>
-       <circle cx="42" cy="18" r="2" fill="#000"/>
-       <!-- Legs -->
-       <path d="M100 150 L95 190 M135 150 L140 190" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
-     </g>
-     
+  
+        <linearGradient id="sky49" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#fef08a"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky49)"/>
+        <rect y="330" width="800" height="120" fill="#15803d"/>
+        <!-- Great Baobab Branch Across Canvas -->
+        <path d="M0 240 Q400 200 800 230 L800 280 Q400 250 0 290 Z" fill="#78350f"/>
+        <!-- Colorful Singing Birds On Branch -->
+        <!-- Bluebird -->
+        <g transform="translate(180, 140)">
+          <ellipse cx="40" cy="50" rx="30" ry="20" fill="#0284c7"/>
+          <circle cx="20" cy="40" r="15" fill="#38bdf8"/>
+          <polygon points="10,40 -4,44 10,48" fill="#f59e0b"/>
+          <circle cx="18" cy="36" r="3" fill="#000"/>
+          <!-- Musical note -->
+          <text x="-10" y="15" font-size="28" fill="#0284c7">&#9835;</text>
+        </g>
+        <!-- Golden Oriole Singing -->
+        <g transform="translate(380, 110)">
+          <ellipse cx="50" cy="60" rx="36" ry="24" fill="#eab308"/>
+          <circle cx="25" cy="45" r="18" fill="#facc15"/>
+          <polygon points="12,45 -6,50 12,55" fill="#f97316"/>
+          <circle cx="22" cy="42" r="3" fill="#000"/>
+          <text x="-12" y="20" font-size="34" fill="#eab308">&#9834;</text>
+        </g>
+        <!-- Crimson Weaver Bird -->
+        <g transform="translate(560, 130)">
+          <ellipse cx="40" cy="50" rx="28" ry="20" fill="#dc2626"/>
+          <circle cx="20" cy="40" r="15" fill="#ef4444"/>
+          <polygon points="10,40 -2,44 10,48" fill="#1c1917"/>
+          <circle cx="18" cy="37" r="3" fill="#fff"/>
+          <text x="-8" y="18" font-size="28" fill="#dc2626">&#9835;</text>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 49 &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Guinea-Fowl Has White Spots</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">How Birds Learned to Speak</text>
   </g>
 </svg>

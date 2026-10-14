@@ -5,35 +5,40 @@
     </filter>
   </defs>
   
-     <defs>
-       <linearGradient id="chamGrad60" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#10b981"/><stop offset="50%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ef4444"/></linearGradient>
-       <linearGradient id="sky60" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0284c7"/><stop offset="60%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#bbf7d0"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#sky60)"/>
-     <!-- Slanted Branch -->
-     <path d="M50 360 Q350 250 750 180" stroke="#78350f" stroke-width="20" fill="none" stroke-linecap="round"/>
-     <!-- Colorful Leaves -->
-     <ellipse cx="680" cy="150" rx="35" ry="16" fill="#15803d" transform="rotate(-30 680 150)"/>
-     <ellipse cx="620" cy="180" rx="35" ry="16" fill="#eab308" transform="rotate(20 620 180)"/>
-     <!-- Chameleon on Branch -->
-     <g transform="translate(240, 130)">
-       <!-- Coiled Spiral Tail -->
-       <path d="M60 110 C-10 110 -10 170 30 170 C60 170 60 140 40 140" stroke="#10b981" stroke-width="12" fill="none" stroke-linecap="round"/>
-       <!-- Gradient Color-Changing Body -->
-       <ellipse cx="140" cy="95" rx="75" ry="40" fill="url(#chamGrad60)"/>
-       <!-- Casque / Crest on Head -->
-       <path d="M190 70 L240 60 L230 100 Z" fill="#ef4444"/>
-       <!-- Turret Eye Rotating -->
-       <circle cx="215" cy="80" r="14" fill="#facc15"/>
-       <circle cx="218" cy="78" r="4" fill="#000"/>
-       <!-- Zygodactylous Feet Gripping Branch -->
-       <path d="M100 120 L90 155 M170 115 L180 145" stroke="#059669" stroke-width="10" stroke-linecap="round"/>
-     </g>
-     
+  
+        <linearGradient id="sky60" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#fed7aa"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky60)"/>
+        <!-- Woodland Clearing -->
+        <rect y="320" width="800" height="130" fill="#15803d"/>
+        <!-- Baobab Branch -->
+        <path d="M100 290 Q400 240 700 270" stroke="#78350f" stroke-width="24" stroke-linecap="round" fill="none"/>
+        <!-- African Collared Dove Resting on Branch -->
+        <g transform="translate(320, 120)">
+          <!-- Soft Sandy Pinkish-Grey Body -->
+          <ellipse cx="100" cy="110" rx="75" ry="48" fill="#d6d3d1"/>
+          <!-- Folded Wing with Soft Shading -->
+          <ellipse cx="115" cy="115" rx="55" ry="32" fill="#a8a29e"/>
+          <!-- Long Sleek Tail -->
+          <polygon points="170,110 240,140 180,130" fill="#78716c"/>
+          <!-- Elegant Dove Head -->
+          <circle cx="45" cy="75" r="28" fill="#e7e5e4"/>
+          <!-- The Distinctive Velvet Black Neck Collar Ring -->
+          <path d="M50 85 C65 92 68 100 55 106" stroke="#1c1917" stroke-width="8" stroke-linecap="round" fill="none"/>
+          <path d="M52 86 C64 92 66 99 56 104" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <!-- Ruby Ringed Eye & Beak -->
+          <circle cx="36" cy="72" r="6" fill="#dc2626"/>
+          <circle cx="36" cy="72" r="3" fill="#000"/>
+          <polygon points="20,76 2,80 20,84" fill="#57534e"/>
+          <!-- Delicate Pink Feet Gripping Branch -->
+          <line x1="85" y1="155" x2="85" y2="175" stroke="#f43f5e" stroke-width="5" stroke-linecap="round"/>
+          <line x1="115" y1="155" x2="115" y2="175" stroke="#f43f5e" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 60 &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Chameleon Changes Colour</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Collared Dove Has a Ring Around His Neck</text>
   </g>
 </svg>

@@ -1,1 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4d3c2"/><stop offset="1" stop-color="#fff8e8"/></linearGradient><filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="55"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.09"/></feComponentTransfer></filter></defs><rect width="1080" height="1440" rx="54" fill="url(#g)"/><rect width="1080" height="1440" rx="54" filter="url(#paper)"/><circle cx="870" cy="230" r="86" fill="#9d4a27" opacity=".22"/><circle cx="214" cy="262" r="136" fill="#fff" opacity=".30"/><path d="M150 1030 C255 920 390 900 540 1010 C690 900 825 920 930 1030 C815 1170 660 1220 540 1135 C420 1220 265 1170 150 1030Z" fill="#183c34" opacity=".14"/><path d="M170 1010 C320 930 430 930 540 1010 C650 930 760 930 910 1010" fill="none" stroke="#183c34" stroke-width="18" stroke-linecap="round" opacity=".28"/><text x="540" y="190" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="2" fill="#9d4a27">LANSDOWN COLLECTION 15</text><text x="540" y="372" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="58" font-weight="700" fill="#183c34">Why the Elephant Fears</text><text x="540" y="448" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="58" font-weight="700" fill="#183c34">the Mouse</text><text x="540" y="1265" text-anchor="middle" font-family="Ubuntu, Arial, sans-serif" font-size="30" fill="#183c34" opacity=".75">Why the Lion Roars and Other Animal Stories</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  
+        <linearGradient id="sky55" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="100%" stop-color="#fed7aa"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky55)"/>
+        <rect y="310" width="800" height="140" fill="#854d0e"/>
+        <!-- Giant Mighty Elephant -->
+        <g transform="translate(120, 80)">
+          <!-- Huge Body -->
+          <ellipse cx="260" cy="170" rx="190" ry="130" fill="#64748b"/>
+          <!-- Massive Tree-Trunk Legs -->
+          <rect x="120" y="240" width="55" height="110" rx="12" fill="#475569"/>
+          <rect x="230" y="240" width="55" height="110" rx="12" fill="#475569"/>
+          <rect x="340" y="240" width="55" height="110" rx="12" fill="#475569"/>
+          <!-- Head and Huge Flapping Ear -->
+          <circle cx="95" cy="150" r="75" fill="#64748b"/>
+          <ellipse cx="130" cy="150" rx="45" ry="65" fill="#475569"/>
+          <!-- Curious Curved Trunk lifting in surprise -->
+          <path d="M45 160 C0 210 10 270 45 280 C65 285 60 260 45 250 C25 240 25 200 65 175 Z" fill="#64748b"/>
+          <!-- Small Watchful Eye and White Tusk -->
+          <circle cx="70" cy="135" r="6" fill="#facc15"/>
+          <circle cx="70" cy="135" r="3" fill="#000"/>
+          <path d="M75 195 Q30 220 20 200 Q45 190 75 185 Z" fill="#f8fafc"/>
+        </g>
+        <!-- Tiny Brave Mouse on the Ground Looking Up -->
+        <g transform="translate(620, 340)">
+          <!-- Mouse Body -->
+          <ellipse cx="40" cy="35" rx="26" ry="16" fill="#78716c"/>
+          <!-- Round Ears -->
+          <circle cx="28" cy="22" r="10" fill="#a8a29e"/>
+          <circle cx="28" cy="22" r="5" fill="#f472b6"/>
+          <!-- Pointed Snout and Whiskers -->
+          <polygon points="16,32 0,38 18,42" fill="#78716c"/>
+          <circle cx="1" cy="38" r="3" fill="#000"/>
+          <circle cx="16" cy="32" r="3" fill="#000"/>
+          <!-- Long Curled Tail -->
+          <path d="M66 35 Q105 20 100 50" stroke="#f472b6" stroke-width="3" fill="none"/>
+        </g>
+        
+  
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 55 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Elephant Fears the Mouse</text>
+  </g>
+</svg>

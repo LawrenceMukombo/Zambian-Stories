@@ -5,36 +5,44 @@
     </filter>
   </defs>
   
-     <defs>
-       <linearGradient id="sky46" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fb923c"/><stop offset="60%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#fef3c7"/></linearGradient>
-       <linearGradient id="rock46" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#78716c"/><stop offset="100%" stop-color="#44403c"/></linearGradient>
-     </defs>
-     <rect width="800" height="450" fill="url(#sky46)"/>
-     <!-- Hot Blazing Sun -->
-     <circle cx="680" cy="110" r="60" fill="#ea580c"/>
-     <!-- Granite Boulders (Kopje) -->
-     <path d="M100 450 Q300 240 600 320 T800 450 Z" fill="url(#rock46)"/>
-     <ellipse cx="380" cy="330" rx="220" ry="80" fill="#57534e"/>
-     <!-- Baboon Sitting on Heated Rock -->
-     <g transform="translate(360, 190)">
-       <!-- Tail -->
-       <path d="M130 110 Q160 50 180 80" stroke="#713f12" stroke-width="8" fill="none" stroke-linecap="round"/>
-       <!-- Bare Bright Red Patch -->
-       <ellipse cx="120" cy="115" rx="18" ry="12" fill="#ef4444"/>
-       <!-- Body -->
-       <ellipse cx="75" cy="85" rx="45" ry="38" fill="#78350f"/>
-       <!-- Arms Resting on Knees -->
-       <path d="M60 85 L35 125 M85 85 L70 125" stroke="#78350f" stroke-width="12" stroke-linecap="round"/>
-       <!-- Dog-like Muzzle & Head -->
-       <circle cx="45" cy="45" r="22" fill="#78350f"/>
-       <ellipse cx="30" cy="50" rx="16" ry="12" fill="#292524"/>
-       <circle cx="42" cy="40" r="3" fill="#facc15"/>
-     </g>
-     
+  
+        <linearGradient id="sky46" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#fbcfe8"/></linearGradient>
+        <rect width="800" height="450" fill="url(#sky46)"/>
+        <rect y="310" width="800" height="140" fill="#15803d"/>
+        <!-- Large Green Leaves Overhanging with Sparkling Dew -->
+        <g transform="translate(100, 80)">
+          <path d="M0 80 Q150 10 320 70 Q160 130 0 80 Z" fill="#16a34a"/>
+          <path d="M120 75 Q260 20 400 90 Q250 150 120 75 Z" fill="#22c55e"/>
+          <!-- Dew Drops sparkling -->
+          <circle cx="240" cy="80" r="12" fill="#38bdf8" opacity="0.85"/>
+          <circle cx="237" cy="76" r="4" fill="#fff"/>
+          <circle cx="340" cy="95" r="16" fill="#38bdf8" opacity="0.85"/>
+          <circle cx="335" cy="90" r="5" fill="#fff"/>
+        </g>
+        <!-- Hare Reaching Up to Sip -->
+        <g transform="translate(380, 180)">
+          <!-- Body standing on hind legs -->
+          <ellipse cx="100" cy="130" rx="55" ry="70" fill="#d97706"/>
+          <circle cx="100" cy="140" r="45" fill="#fef3c7"/>
+          <!-- Tail -->
+          <circle cx="155" cy="170" r="16" fill="#fff"/>
+          <!-- Head tilted up -->
+          <circle cx="80" cy="60" r="32" fill="#d97706"/>
+          <!-- Long Upright Ears -->
+          <ellipse cx="65" cy="5" rx="10" ry="38" fill="#d97706" transform="rotate(-10 65 5)"/>
+          <ellipse cx="65" cy="5" rx="5" ry="28" fill="#f472b6" transform="rotate(-10 65 5)"/>
+          <ellipse cx="90" cy="10" rx="10" ry="38" fill="#d97706" transform="rotate(10 90 10)"/>
+          <ellipse cx="90" cy="10" rx="5" ry="28" fill="#f472b6" transform="rotate(10 90 10)"/>
+          <!-- Tiny nose touching dewdrops -->
+          <circle cx="60" cy="50" r="4" fill="#f43f5e"/>
+          <circle cx="75" cy="52" r="5" fill="#000"/>
+        </g>
+        
+  
   <!-- Title Badge Overlay -->
   <g transform="translate(24, 24)">
-    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <rect width="420" height="62" rx="10" fill="rgba(24, 57, 52, 0.90)" filter="url(#shadow)"/>
     <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 46 &middot; LANSDOWN TALES</text>
-    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Baboon Has a Bare Bottom</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Hare Drinks Dew</text>
   </g>
 </svg>
