@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <!-- Lion & Honey Scene -->
+     <defs>
+       <linearGradient id="sky41" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="55%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#fef3c7"/></linearGradient>
+       <linearGradient id="sun41" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ea580c"/><stop offset="100%" stop-color="#f59e0b"/></linearGradient>
+       <linearGradient id="grass41" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#78350f"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky41)"/>
+     <circle cx="680" cy="110" r="65" fill="url(#sun41)" opacity="0.85"/>
+     <path d="M0 320 Q200 290 400 320 T800 310 L800 450 L0 450 Z" fill="#92400e" opacity="0.6"/>
+     <path d="M0 350 Q250 330 500 360 T800 340 L800 450 L0 450 Z" fill="url(#grass41)"/>
+     <!-- Acacia Tree -->
+     <path d="M120 370 L135 220 L110 180 M135 220 L160 170 M135 250 L180 230" stroke="#451a03" stroke-width="8" stroke-linecap="round"/>
+     <ellipse cx="140" cy="165" rx="90" ry="22" fill="#365314" opacity="0.9"/>
+     <ellipse cx="170" cy="155" rx="60" ry="16" fill="#4d7c0f" opacity="0.8"/>
+     <!-- Honey Pot -->
+     <ellipse cx="250" cy="385" rx="30" ry="12" fill="#78350f"/>
+     <path d="M225 385 C220 350 230 330 250 330 C270 330 280 350 275 385 Z" fill="#b45309"/>
+     <ellipse cx="250" cy="330" rx="18" ry="7" fill="#fbbf24"/>
+     <!-- Golden Lion Silhouette & Face -->
+     <g transform="translate(420, 210)">
+       <!-- Mane -->
+       <path d="M110 50 C50 -20 180 -30 200 40 C240 10 260 90 220 130 C250 170 190 220 130 190 C80 210 40 160 60 120 C30 80 70 30 110 50 Z" fill="#9a3412"/>
+       <!-- Body -->
+       <path d="M140 150 C180 140 240 150 290 190 L270 210 L160 210 Z" fill="#c2410c"/>
+       <!-- Head -->
+       <ellipse cx="135" cy="100" rx="42" ry="48" fill="#ea580c"/>
+       <!-- Muzzle -->
+       <ellipse cx="135" cy="120" rx="24" ry="18" fill="#fef3c7"/>
+       <polygon points="135,112 127,120 143,120" fill="#451a03"/>
+       <!-- Roaring Mouth -->
+       <path d="M125 125 Q135 142 145 125 Z" fill="#7f1d1d"/>
+       <!-- Eyes -->
+       <ellipse cx="120" cy="95" rx="5" ry="4" fill="#451a03"/>
+       <ellipse cx="150" cy="95" rx="5" ry="4" fill="#451a03"/>
+       <!-- Ears -->
+       <circle cx="102" cy="62" r="14" fill="#ea580c"/>
+       <circle cx="168" cy="62" r="14" fill="#ea580c"/>
+     </g>
+     <!-- Flying Bees -->
+     <g fill="#fbbf24">
+       <circle cx="330" cy="270" r="5"/><circle cx="338" cy="265" r="4"/><circle cx="355" cy="280" r="5"/><circle cx="370" cy="260" r="4"/><circle cx="385" cy="290" r="5"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 41 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Lion Roars</text>
+  </g>
+</svg>

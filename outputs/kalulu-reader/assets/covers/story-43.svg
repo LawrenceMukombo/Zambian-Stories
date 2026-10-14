@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="sky43" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#f97316"/><stop offset="50%" stop-color="#fbbf24"/><stop offset="100%" stop-color="#fef08a"/></linearGradient>
+       <linearGradient id="water43" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0284c7"/><stop offset="100%" stop-color="#075985"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky43)"/>
+     <!-- Savanna Fire Glow -->
+     <ellipse cx="140" cy="310" rx="110" ry="40" fill="#dc2626" opacity="0.4"/>
+     <!-- Flame Silhouettes -->
+     <path d="M70 330 Q90 260 110 320 Q130 240 150 315 Q170 250 190 330 Z" fill="#ea580c"/>
+     <path d="M90 330 Q110 280 125 325 Q145 270 160 330 Z" fill="#facc15"/>
+     <!-- River -->
+     <path d="M0 340 Q400 300 800 330 L800 450 L0 450 Z" fill="url(#water43)"/>
+     <!-- Big Smooth Hairless Hippo in Water -->
+     <g transform="translate(380, 230)">
+       <!-- Hippo Back & Body -->
+       <ellipse cx="180" cy="110" rx="140" ry="85" fill="#64748b"/>
+       <!-- Large Head & Snout -->
+       <ellipse cx="90" cy="85" rx="75" ry="55" fill="#475569"/>
+       <ellipse cx="50" cy="100" rx="45" ry="35" fill="#334155"/>
+       <!-- Nostrils -->
+       <ellipse cx="35" cy="85" rx="8" ry="6" fill="#1e293b"/>
+       <!-- Little Ears -->
+       <circle cx="120" cy="45" r="10" fill="#475569"/>
+       <!-- Eyes -->
+       <circle cx="85" cy="65" r="7" fill="#0f172a"/>
+       <circle cx="87" cy="63" r="2" fill="#fff"/>
+       <!-- Water Ripples -->
+       <ellipse cx="160" cy="160" rx="160" ry="12" fill="none" stroke="#38bdf8" stroke-width="4" opacity="0.7"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 43 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Hippo Has No Hair</text>
+  </g>
+</svg>

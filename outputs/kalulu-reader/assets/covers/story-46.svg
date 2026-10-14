@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="sky46" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fb923c"/><stop offset="60%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#fef3c7"/></linearGradient>
+       <linearGradient id="rock46" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#78716c"/><stop offset="100%" stop-color="#44403c"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky46)"/>
+     <!-- Hot Blazing Sun -->
+     <circle cx="680" cy="110" r="60" fill="#ea580c"/>
+     <!-- Granite Boulders (Kopje) -->
+     <path d="M100 450 Q300 240 600 320 T800 450 Z" fill="url(#rock46)"/>
+     <ellipse cx="380" cy="330" rx="220" ry="80" fill="#57534e"/>
+     <!-- Baboon Sitting on Heated Rock -->
+     <g transform="translate(360, 190)">
+       <!-- Tail -->
+       <path d="M130 110 Q160 50 180 80" stroke="#713f12" stroke-width="8" fill="none" stroke-linecap="round"/>
+       <!-- Bare Bright Red Patch -->
+       <ellipse cx="120" cy="115" rx="18" ry="12" fill="#ef4444"/>
+       <!-- Body -->
+       <ellipse cx="75" cy="85" rx="45" ry="38" fill="#78350f"/>
+       <!-- Arms Resting on Knees -->
+       <path d="M60 85 L35 125 M85 85 L70 125" stroke="#78350f" stroke-width="12" stroke-linecap="round"/>
+       <!-- Dog-like Muzzle & Head -->
+       <circle cx="45" cy="45" r="22" fill="#78350f"/>
+       <ellipse cx="30" cy="50" rx="16" ry="12" fill="#292524"/>
+       <circle cx="42" cy="40" r="3" fill="#facc15"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 46 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Baboon Has a Bare Bottom</text>
+  </g>
+</svg>

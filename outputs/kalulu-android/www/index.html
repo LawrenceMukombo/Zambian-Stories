@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183934">
+  <meta name="description" content="Stories from the Baobab Tree - Traditional EPUB-style 3D flipbook reader with 60 African folktales and moral lessons.">
+  <link rel="stylesheet" href="style.css">
+  <title>Stories from the Baobab Tree - Flipbook Edition</title>
+  <script>
+    if (location.protocol !== 'file:') {
+      const l = document.createElement('link');
+      l.rel = 'manifest';
+      l.href = 'manifest.webmanifest';
+      document.head.appendChild(l);
+    }
+  </script>
+</head>
+<body class="theme-paper font-md">
+  <!-- Minimalist Book Header / Toolbar -->
+  <header id="book-header">
+    <div class="header-left">
+      <button id="btn-toc" class="tool-btn" onclick="openBookTOC()" title="Open Table of Contents (Index)">
+        <span class="icon">&#128214;</span> <span class="label">Contents</span>
+      </button>
+      <button id="btn-first" class="tool-btn" onclick="goToSpread(0)" title="Go to Front Cover">
+        <span class="icon">&#128217;</span> <span class="label">Cover</span>
+      </button>
+    </div>
+
+    <div class="book-title-pill" onclick="openBookTOC()" title="Click to view Chapter Index">
+      <span class="book-emblem">&#127795;</span>
+      <span id="current-chapter-title" class="title-text">Stories from the Baobab Tree</span>
+    </div>
+
+    <div class="header-right">
+      <button id="btn-read-aloud" class="tool-btn tts-btn" onclick="toggleReadAloud()" title="Read Page Aloud (Voice)">
+        <span id="tts-icon">&#128266;</span> <span id="tts-label" class="label">Read</span>
+      </button>
+
+      <div class="dropdown-wrapper">
+        <button id="btn-appearance" class="tool-btn" onclick="toggleAppearanceMenu(event)" title="Appearance & Themes">
+          <span class="icon">&#128065;</span> <span class="label">Style</span>
+        </button>
+        <div id="appearance-menu" class="popover-menu" hidden>
+          <div class="menu-section">
+            <span class="menu-label">Paper Style</span>
+            <div class="theme-picker">
+              <button class="theme-swatch paper-swatch active" onclick="setBookTheme('paper')">&#128214; Cream</button>
+              <button class="theme-swatch sepia-swatch" onclick="setBookTheme('sepia')">&#128220; Parchment</button>
+              <button class="theme-swatch night-swatch" onclick="setBookTheme('night')">&#127769; Velvet</button>
+            </div>
+          </div>
+          <div class="menu-section">
+            <span class="menu-label">Text Size</span>
+            <div class="size-picker">
+              <button class="size-btn" onclick="setBookFontSize('sm')">A-</button>
+              <button class="size-btn active" onclick="setBookFontSize('md')">A</button>
+              <button class="size-btn" onclick="setBookFontSize('lg')">A+</button>
+              <button class="size-btn" onclick="setBookFontSize('xl')">A++</button>
+            </div>
+          </div>
+          <div class="menu-section">
+            <span class="menu-label">Audio</span>
+            <button id="btn-sound-toggle" class="sound-btn" onclick="toggleFlipSound()">&#128266; Page Flip Sound: On</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3D Book Reading Stage -->
+  <main id="book-stage" class="book-stage">
+    <!-- Click / Hover zones for page flipping -->
+    <button class="page-turn-zone turn-prev" onclick="flipPrev()" title="Flip to Previous Page (or Left Arrow)" aria-label="Previous Page">
+      <span class="turn-arrow">&#10094;</span>
+    </button>
+    <button class="page-turn-zone turn-next" onclick="flipNext()" title="Flip to Next Page (or Right Arrow)" aria-label="Next Page">
+      <span class="turn-arrow">&#10095;</span>
+    </button>
+
+    <!-- The 3D Book Container -->
+    <div id="book-container" class="book-container">
+      <div class="book-shadow"></div>
+      <div class="book-cover-edge"></div>
+
+      <!-- Left Page (Verso) -->
+      <article id="page-left" class="book-page page-left" tabindex="0">
+        <header class="page-running-head">
+          <span class="running-left">Stories from the Baobab Tree</span>
+        </header>
+        <div id="left-page-content" class="page-content">
+          <!-- Dynamically populated -->
+        </div>
+        <footer class="page-footer">
+          <span id="left-page-number" class="page-num"></span>
+        </footer>
+      </article>
+
+      <!-- Central Book Crease / Spine -->
+      <div class="book-spine">
+        <div class="spine-highlight"></div>
+        <div class="ribbon-bookmark" title="Bookmark"></div>
+      </div>
+
+      <!-- Right Page (Recto) -->
+      <article id="page-right" class="book-page page-right" tabindex="0">
+        <header class="page-running-head">
+          <span id="running-chapter" class="running-right">Chapter Title</span>
+        </header>
+        <div id="right-page-content" class="page-content">
+          <!-- Dynamically populated -->
+        </div>
+        <footer class="page-footer">
+          <span id="right-page-number" class="page-num"></span>
+        </footer>
+      </article>
+
+      <!-- Dynamic 3D Page Turning Leaf (Injected during flip animation) -->
+      <div id="flipping-leaf" class="flipping-leaf" aria-hidden="true"></div>
+    </div>
+  </main>
+
+  <!-- Book Scrubber / Bottom Navigation Bar -->
+  <footer id="book-footer">
+    <div class="scrubber-bar">
+      <button class="scrubber-step" onclick="flipPrev()" title="Previous Page">&#8592; Prev</button>
+      <input type="range" id="page-scrubber" min="0" max="1" value="0" step="1" oninput="onScrubberInput(this.value)" aria-label="Book page slider">
+      <button class="scrubber-step" onclick="flipNext()" title="Next Page">Next &#8594;</button>
+    </div>
+    <div class="scrubber-meta">
+      <span id="spread-indicator">Cover</span>
+      <span class="meta-dot">&middot;</span>
+      <span id="progress-indicator">Stories from the Baobab Tree</span>
+    </div>
+  </footer>
+
+  <!-- Table of Contents & Chapter Index Modal -->
+  <div id="toc-overlay" class="toc-overlay" onclick="closeBookTOC()" hidden></div>
+  <aside id="toc-modal" class="toc-modal" aria-label="Table of Contents" hidden>
+    <div class="toc-modal-header">
+      <div class="toc-title-group">
+        <h2>Table of Contents</h2>
+        <p>Stories from the Baobab Tree &middot; 60 Chapters</p>
+      </div>
+      <button class="toc-close-btn" onclick="closeBookTOC()" aria-label="Close Table of Contents">&times;</button>
+    </div>
+
+    <div class="toc-search-wrap">
+      <input type="search" id="toc-search-box" placeholder="Search chapters, characters, moral lessons..." oninput="onTOCSearch(this.value)">
+    </div>
+
+    <div id="toc-chapter-list" class="toc-chapter-list">
+      <!-- Injected by app.js -->
+    </div>
+  </aside>
+
+  <script src="stories-data.js"></script>
+  <script src="front-matter.js"></script>
+  <script src="quiz-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

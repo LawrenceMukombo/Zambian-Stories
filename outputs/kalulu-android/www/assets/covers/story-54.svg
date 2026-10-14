@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="sky54" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="60%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#fde047"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky54)"/>
+     <rect y="310" width="800" height="140" fill="#854d0e"/>
+     <!-- Waterhole -->
+     <ellipse cx="200" cy="380" rx="160" ry="45" fill="#0284c7"/>
+     <!-- Strong Heavy Rhinoceros -->
+     <g transform="translate(320, 180)">
+       <!-- Body Armor Fold -->
+       <ellipse cx="170" cy="100" rx="110" ry="70" fill="#78716c"/>
+       <path d="M130 35 Q140 100 135 165" stroke="#57534e" stroke-width="8"/>
+       <!-- Sturdy Legs -->
+       <rect x="90" y="145" width="30" height="60" rx="6" fill="#57534e"/>
+       <rect x="210" y="145" width="30" height="60" rx="6" fill="#57534e"/>
+       <!-- Heavy Head -->
+       <path d="M85 70 L10 115 L60 145 Z" fill="#78716c"/>
+       <!-- Nose with Broken/Missing Horn Stump -->
+       <ellipse cx="16" cy="112" rx="8" ry="6" fill="#44403c"/>
+       <circle cx="65" cy="85" r="4" fill="#000"/>
+       <!-- Small Ears -->
+       <polygon points="85,60 92,45 98,62" fill="#57534e"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 54 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why the Rhinoceros Has No Horn on His Nose</text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+# Build outputs and binaries
+*.apk
+*.aab
+*.dex
+*.class
+*.pyc
+__pycache__/
+
+# Node and package managers (recursive)
+**/node_modules/
+node_modules/
+package-lock.json.bak
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Android build outputs & local SDK (recursive)
+**/.gradle/
+**/build/
+.gradle/
+build/
+local.properties
+work/android-sdk/
+work/source.pdf
+
+# Large generated distribution bundles (>25MB)
+outputs/*.apk
+outputs/*.epub
+outputs/*.pdf
+outputs/kalulu-reader/dist/
+dist/
+
+# System and IDE
+.DS_Store
+Thumbs.db
+.codex/
+.agents/
+*.log
+
+# Sensitive files
+.env
+.env.*
+*.keystore
+*.jks

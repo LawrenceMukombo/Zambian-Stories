@@ -1,0 +1,17 @@
+{
+  "name": "stories-from-the-baobab-tree",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Local reader and Amazon KDP build pipeline for Stories from the Baobab Tree",
+  "scripts": {
+    "preview": "python -m http.server 8080",
+    "test": "node scripts/preflight.js",
+    "build:data": "node scripts/export-data.js",
+    "build": "npm run test && npm run build:data && node scripts/run-build.js",
+    "build:full": "npm run test && npm run build:data && node scripts/run-build.js --full",
+    "preflight": "node scripts/preflight.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="sky48" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdba74"/><stop offset="100%" stop-color="#fde047"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky48)"/>
+     <!-- Ancient Baobab Trunk -->
+     <path d="M50 450 C80 320 100 240 140 180 C180 240 200 320 230 450 Z" fill="#78350f"/>
+     <ellipse cx="140" cy="140" rx="110" ry="40" fill="#3f6212"/>
+     <!-- Savanna Ground -->
+     <rect y="330" width="800" height="120" fill="#a16207"/>
+     <!-- Great Elephant -->
+     <g transform="translate(320, 150)">
+       <!-- Huge Body -->
+       <ellipse cx="220" cy="120" rx="130" ry="100" fill="#64748b"/>
+       <!-- Giant Sturdy Legs -->
+       <rect x="130" y="180" width="40" height="85" rx="10" fill="#475569"/>
+       <rect x="250" y="180" width="40" height="85" rx="10" fill="#475569"/>
+       <!-- Big Ear -->
+       <path d="M90 60 C30 40 10 140 70 170 C100 150 110 110 90 60 Z" fill="#475569"/>
+       <!-- Head & Trunk -->
+       <circle cx="105" cy="100" r="48" fill="#64748b"/>
+       <path d="M110 130 Q100 220 50 240 Q40 220 80 180" stroke="#64748b" stroke-width="24" fill="none" stroke-linecap="round"/>
+       <!-- White Ivory Tusk -->
+       <path d="M85 145 Q40 175 30 150" stroke="#f8fafc" stroke-width="8" fill="none" stroke-linecap="round"/>
+       <!-- The Famous Small Eye -->
+       <circle cx="95" cy="90" r="3" fill="#0f172a"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 48 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Elephant Has Small Eyes</text>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="night56" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="60%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e293b"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#night56)"/>
+     <!-- Stars in Sky -->
+     <g fill="#f8fafc">
+       <circle cx="80" cy="60" r="2"/><circle cx="160" cy="90" r="1.5"/><circle cx="240" cy="50" r="2"/><circle cx="320" cy="110" r="1.5"/><circle cx="480" cy="70" r="2"/><circle cx="680" cy="50" r="2"/><circle cx="740" cy="110" r="1.5"/>
+     </g>
+     <!-- Silver Crescent Moon -->
+     <path d="M640 40 A50 50 0 0 0 680 120 A42 42 0 0 1 640 40 Z" fill="#fef08a"/>
+     <!-- Tree Branch -->
+     <path d="M100 340 Q400 280 800 320" stroke="#451a03" stroke-width="16" fill="none"/>
+     <!-- Perched Owl with Glowing Huge Eyes -->
+     <g transform="translate(340, 150)">
+       <!-- Body -->
+       <ellipse cx="65" cy="110" rx="50" ry="65" fill="#44403c"/>
+       <!-- Feathered Chest -->
+       <ellipse cx="65" cy="120" rx="32" ry="42" fill="#d6d3d1"/>
+       <!-- Feathers V Pattern -->
+       <path d="M55 105 L65 115 L75 105 M55 125 L65 135 L75 125" stroke="#78716c" stroke-width="3" fill="none"/>
+       <!-- Ear Tufts -->
+       <polygon points="30,45 15,20 45,35" fill="#292524"/>
+       <polygon points="100,45 115,20 85,35" fill="#292524"/>
+       <!-- Giant Yellow Eyes -->
+       <circle cx="45" cy="65" r="18" fill="#facc15"/>
+       <circle cx="85" cy="65" r="18" fill="#facc15"/>
+       <circle cx="45" cy="65" r="9" fill="#000"/>
+       <circle cx="85" cy="65" r="9" fill="#000"/>
+       <circle cx="48" cy="62" r="3" fill="#fff"/>
+       <circle cx="88" cy="62" r="3" fill="#fff"/>
+       <!-- Beak -->
+       <polygon points="65,70 60,85 70,85" fill="#f97316"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 56 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Owl Flies at Night</text>
+  </g>
+</svg>

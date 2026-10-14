@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="sky50" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="60%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#312e81"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky50)"/>
+     <!-- Luminous Full Moon -->
+     <circle cx="620" cy="100" r="55" fill="#fef08a"/>
+     <path d="M0 320 Q400 290 800 330 L800 450 L0 450 Z" fill="#1e293b"/>
+     <!-- Sloping Back Hyena -->
+     <g transform="translate(260, 200)">
+       <!-- Sloping Body from High Shoulders to Low Hips -->
+       <path d="M50 50 Q120 40 190 85 L180 125 L40 110 Z" fill="#78716c"/>
+       <!-- Spots on Body -->
+       <g fill="#292524" opacity="0.75">
+         <circle cx="100" cy="65" r="6"/><circle cx="130" cy="70" r="5"/><circle cx="160" cy="88" r="6"/>
+         <circle cx="115" cy="85" r="5"/><circle cx="145" cy="98" r="5"/>
+       </g>
+       <!-- Front High Legs -->
+       <path d="M60 110 L50 165 M80 110 L85 165" stroke="#57534e" stroke-width="9" stroke-linecap="round"/>
+       <!-- Hind Shorter Limping Leg -->
+       <path d="M170 115 L160 155 M190 115 L185 145" stroke="#57534e" stroke-width="8" stroke-linecap="round"/>
+       <!-- Broad Head & Rounded Ears -->
+       <circle cx="35" cy="45" r="24" fill="#57534e"/>
+       <circle cx="22" cy="25" r="10" fill="#292524"/>
+       <circle cx="45" cy="22" r="10" fill="#292524"/>
+       <polygon points="25,50 5,60 25,68" fill="#1c1917"/>
+       <!-- Glowing Eye in the Dark -->
+       <circle cx="30" cy="42" r="4" fill="#facc15"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 50 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Hyena Limps</text>
+  </g>
+</svg>

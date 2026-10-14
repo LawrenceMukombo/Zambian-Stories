@@ -1,0 +1,8 @@
+{
+  "name": "Stories from the Baobab Tree",
+  "short_name": "Baobab Stories",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff8e8",
+  "theme_color": "#183934"
+}

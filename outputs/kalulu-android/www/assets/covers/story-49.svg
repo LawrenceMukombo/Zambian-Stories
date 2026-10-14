@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="sky49" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="70%" stop-color="#bae6fd"/><stop offset="100%" stop-color="#fef08a"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky49)"/>
+     <rect y="310" width="800" height="140" fill="#84cc16"/>
+     <!-- Acacia Shrub -->
+     <ellipse cx="640" cy="240" rx="90" ry="30" fill="#4d7c0f"/>
+     <path d="M635 320 L640 240" stroke="#713f12" stroke-width="8"/>
+     <!-- Spotted Guinea Fowl -->
+     <g transform="translate(300, 180)">
+       <!-- Plump Round Body -->
+       <ellipse cx="120" cy="100" rx="75" ry="55" fill="#1e293b"/>
+       <!-- White Polka Dots Everywhere! -->
+       <g fill="#f8fafc">
+         <circle cx="80" cy="80" r="3"/><circle cx="100" cy="75" r="3"/><circle cx="120" cy="80" r="3"/><circle cx="140" cy="85" r="3"/>
+         <circle cx="70" cy="100" r="3"/><circle cx="90" cy="100" r="3"/><circle cx="110" cy="105" r="3"/><circle cx="130" cy="105" r="3"/>
+         <circle cx="85" cy="120" r="3"/><circle cx="105" cy="125" r="3"/><circle cx="125" cy="125" r="3"/><circle cx="145" cy="115" r="3"/>
+         <circle cx="160" cy="100" r="3"/><circle cx="150" cy="95" r="3"/>
+       </g>
+       <!-- Slender Neck & Head with Blue/Red Helmet -->
+       <path d="M60 85 Q40 40 45 25" stroke="#0284c7" stroke-width="12" fill="none" stroke-linecap="round"/>
+       <circle cx="45" cy="20" r="12" fill="#0284c7"/>
+       <polygon points="45,10 52,2 50,15" fill="#dc2626"/>
+       <polygon points="35,22 22,25 35,28" fill="#f59e0b"/>
+       <circle cx="42" cy="18" r="2" fill="#000"/>
+       <!-- Legs -->
+       <path d="M100 150 L95 190 M135 150 L140 190" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 49 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Guinea-Fowl Has White Spots</text>
+  </g>
+</svg>

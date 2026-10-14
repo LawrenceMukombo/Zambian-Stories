@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="sky51" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="70%" stop-color="#fed7aa"/><stop offset="100%" stop-color="#fef3c7"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#sky51)"/>
+     <rect y="300" width="800" height="150" fill="#d97706"/>
+     <!-- Zebra Galloping -->
+     <g transform="translate(280, 160)">
+       <!-- White Coat Base -->
+       <ellipse cx="140" cy="100" rx="90" ry="50" fill="#f8fafc"/>
+       <!-- Black Bold Stripes -->
+       <g fill="#0f172a">
+         <polygon points="90,55 98,55 105,145 95,145"/>
+         <polygon points="115,52 124,52 130,148 120,148"/>
+         <polygon points="142,52 150,52 154,148 145,148"/>
+         <polygon points="168,55 177,55 178,145 168,145"/>
+         <polygon points="192,65 200,65 198,135 189,135"/>
+       </g>
+       <!-- Neck & Head with Stripes -->
+       <path d="M70 90 L30 30 L55 20 L95 70 Z" fill="#f8fafc"/>
+       <polygon points="65,30 75,25 85,60 75,65" fill="#0f172a"/>
+       <circle cx="30" cy="25" r="16" fill="#f8fafc"/>
+       <ellipse cx="18" cy="30" rx="12" ry="8" fill="#0f172a"/>
+       <circle cx="32" cy="20" r="3" fill="#000"/>
+       <!-- Mane -->
+       <path d="M85 60 L25 15" stroke="#0f172a" stroke-width="8" stroke-dasharray="4,3"/>
+       <!-- Legs -->
+       <path d="M75 145 L70 200 M110 145 L115 200 M180 145 L175 200 M215 140 L225 195" stroke="#f8fafc" stroke-width="9" stroke-linecap="round"/>
+     </g>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 51 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Zebra Has Stripes</text>
+  </g>
+</svg>

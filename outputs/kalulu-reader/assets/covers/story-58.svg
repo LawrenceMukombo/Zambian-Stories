@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+     <defs>
+       <linearGradient id="water58" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="50%" stop-color="#0284c7"/><stop offset="100%" stop-color="#0c4a6e"/></linearGradient>
+     </defs>
+     <rect width="800" height="450" fill="url(#water58)"/>
+     <!-- Sunlight Beams Down Into Water -->
+     <polygon points="120,0 220,0 350,450 180,450" fill="#ffffff" opacity="0.12"/>
+     <polygon points="400,0 520,0 680,450 500,450" fill="#ffffff" opacity="0.12"/>
+     <!-- Riverbed Pebbles -->
+     <g fill="#78716c">
+       <circle cx="100" cy="430" r="25"/><circle cx="160" cy="435" r="18"/><circle cx="340" cy="440" r="28"/><circle cx="580" cy="430" r="32"/><circle cx="680" cy="438" r="22"/>
+     </g>
+     <!-- Main Beautiful African Tigerfish / Tilapia -->
+     <g transform="translate(300, 170)">
+       <!-- Fish Body -->
+       <ellipse cx="120" cy="70" rx="85" ry="45" fill="#f59e0b"/>
+       <!-- Scales Pattern -->
+       <path d="M90 40 Q110 70 90 100 M120 35 Q140 70 120 105 M150 40 Q170 70 150 100" stroke="#b45309" stroke-width="4" fill="none"/>
+       <!-- Tail Fin -->
+       <polygon points="200,70 260,25 240,70 260,115" fill="#ea580c"/>
+       <!-- Top Dorsal Fin -->
+       <polygon points="90,26 140,5 170,30" fill="#ea580c"/>
+       <!-- Pectoral Fin -->
+       <polygon points="80,75 50,105 90,95" fill="#f97316"/>
+       <!-- Eye -->
+       <circle cx="55" cy="60" r="9" fill="#fef08a"/>
+       <circle cx="55" cy="60" r="5" fill="#0c4a6e"/>
+     </g>
+     <!-- Air Bubbles -->
+     <circle cx="280" cy="180" r="6" fill="#bae6fd" opacity="0.7"/>
+     <circle cx="260" cy="140" r="4" fill="#bae6fd" opacity="0.7"/>
+     <circle cx="270" cy="100" r="8" fill="#bae6fd" opacity="0.7"/>
+     
+  <!-- Title Badge Overlay -->
+  <g transform="translate(24, 24)">
+    <rect width="360" height="62" rx="10" fill="rgba(24, 57, 52, 0.88)" filter="url(#shadow)"/>
+    <text x="18" y="24" font-family="Ubuntu, sans-serif" font-size="12" font-weight="700" fill="#f59e0b" letter-spacing="1.5">CHAPTER 58 &middot; LANSDOWN TALES</text>
+    <text x="18" y="48" font-family="Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Why Fish Lives in Water</text>
+  </g>
+</svg>
